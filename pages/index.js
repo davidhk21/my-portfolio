@@ -13,11 +13,11 @@ export default function Home() {
 
       <main>
         <div>
-          Hello Next.js!
+          Hello Home Page!
         </div>
 
       </main>
 
     </div>
-  )
+  );
 }

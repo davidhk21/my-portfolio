@@ -5,7 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 export default function NavBar() {
   return (
     <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="/">Navbar</Navbar.Brand>
+      <Navbar.Brand href="/">David Kim</Navbar.Brand>
       <Nav className="mr-auto">
         <Link href="/" passHref>
           <Nav.Link>Home</Nav.Link>
