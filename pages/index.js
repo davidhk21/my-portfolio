@@ -12,15 +12,15 @@ export default function Home() {
       </Head>
 
       <main>
-        <div>
+        <div className={styles.imageContainer}>
           <Image
             src="/prof_pic.JPG"
             alt="Picture of the author"
             className={styles.backgroundImage}
+            fluid
           />
-          <div>
-            Hello Home Page!
-          </div>
+          <h1 className={styles.imageTitle}>Hi! I'm David Kim,</h1>
+          <h3 className={styles.imageText}>a Software Engineer</h3>
         </div>
 
       </main>
