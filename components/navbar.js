@@ -1,19 +1,22 @@
 import React from 'react';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import Link from 'next/link';
+import { Navbar, Nav } from 'react-bootstrap';
 
 export default function NavBar() {
   return (
     <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar.Brand href="/">Navbar</Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-        <Nav.Link href="/contact_me">Contact</Nav.Link>
+        <Link href="/" passHref>
+          <Nav.Link>Home</Nav.Link>
+        </Link>
+        <Link href="/portfolio" passHref>
+          <Nav.Link>Portfolio</Nav.Link>
+        </Link>
+        <Link href="/contact_me" passHref>
+          <Nav.Link>Contact</Nav.Link>
+        </Link>
       </Nav>
-      <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-info">Search</Button>
-      </Form>
     </Navbar>
   );
 }

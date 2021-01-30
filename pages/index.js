@@ -15,9 +15,6 @@ export default function Home() {
         <div>
           Hello Next.js!
         </div>
-        <Link href="/portfolio">
-          <a>Portfolio</a>
-        </Link>
 
       </main>
 
