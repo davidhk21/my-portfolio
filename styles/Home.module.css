@@ -5,14 +5,14 @@
 .imageTextContainer {
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 10%;
   color: white;
 }
 
 .imageTitle {
-
+  font-size: 3.5vw;
 }
 
 .imageText {
-
+  font-size: 2vw;
 }
