@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 import Introduction from '../components/home_page_components/introduction';
-import AboutMe from '../components/home_page_components/about_me';
+import Passion from '../components/home_page_components/passion';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
 
       <main>
         <Introduction />
-        <AboutMe />
+        <Passion />
 
       </main>
 

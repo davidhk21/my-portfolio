@@ -21,7 +21,7 @@
 
 /********** About Me **********/
 
-.aboutMeContainer1 {
+.passionContainer1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,7 +38,7 @@
   height: auto;
 }
 
-.aboutMeInfoContainer {
+.passionInfoContainer {
   margin: 0 0 0 80px;
   width: 40vw;
   display: flex;
