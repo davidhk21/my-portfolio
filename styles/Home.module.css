@@ -2,16 +2,17 @@
   position: relative;
 }
 
-.backgroundImage {
+.imageTextContainer {
   position: absolute;
+  top: 25%;
+  left: 20%;
+  color: white;
 }
 
 .imageTitle {
-  position: absolute;
-  top: 25%;
-  left: 25%;
+
 }
 
 .imageText {
-  position: absolute;
+
 }

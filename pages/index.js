@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>David Kim</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -16,11 +16,12 @@ export default function Home() {
           <Image
             src="/prof_pic.JPG"
             alt="Picture of the author"
-            className={styles.backgroundImage}
             fluid
           />
-          <h1 className={styles.imageTitle}>Hi! I'm David Kim,</h1>
-          <h3 className={styles.imageText}>a Software Engineer</h3>
+          <div className={styles.imageTextContainer}>
+            <h1 className={styles.imageTitle}>Hi! I&apos;m David Kim,</h1>
+            <h3 className={styles.imageText}>a Software Engineer</h3>
+          </div>
         </div>
 
       </main>
