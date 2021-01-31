@@ -4,7 +4,7 @@ import styles from '../../styles/Home.module.css';
 
 export default function AboutMe() {
   return (
-    <div className={styles.aboutMeContainer}>
+    <div className={styles.aboutMeContainer1}>
       <div className={styles.selfPortraitContainer}>
         <Image
           src="/self_portrait.JPG"
@@ -12,9 +12,9 @@ export default function AboutMe() {
           className={styles.selfPortrait}
         />
       </div>
-      <div>
-        <h1>About Me</h1>
-        <p>This is the About Me Section where I write about myself and talk about who I am as a person.</p>
+      <div className={styles.aboutMeInfoContainer}>
+        <h1 className={styles.passionTitle}>My passion and focus is people and self-development</h1>
+        <p className={styles.passionDesc}>By pushing myself to have experiences such as studying abroad for a full year in Shanghai, China and organizing my University&apos;s very first TEDx event with the theme &quot;Take The Leap&quot;, I was able to develop a growth mindset that ultimately led me to fall in love with Software Engineering.</p>
       </div>
     </div>
   );

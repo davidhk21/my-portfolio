@@ -21,14 +21,16 @@
 
 /********** About Me **********/
 
-.aboutMeContainer {
+.aboutMeContainer1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 10vh;
 }
 
 .selfPortraitContainer {
   max-width: 30%;
+  margin: 0 80px 0 0;
 }
 
 .selfPortrait {
@@ -36,3 +38,18 @@
   height: auto;
 }
 
+.aboutMeInfoContainer {
+  margin: 0 0 0 80px;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.passionTitle {
+  font-size: 7vh;
+}
+
+.passionDesc {
+  font-size: 3vh;
+}
