@@ -1,7 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-import { Image } from 'react-bootstrap';
 import styles from '../styles/Home.module.css';
+
+import Introduction from '../components/home_page_components/introduction';
+import AboutMe from '../components/home_page_components/about_me';
 
 export default function Home() {
   return (
@@ -12,17 +14,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className={styles.imageContainer}>
-          <Image
-            src="/prof_pic.JPG"
-            alt="Picture of the author"
-            fluid
-          />
-          <div className={styles.imageTextContainer}>
-            <h1 className={styles.imageTitle}>Hi! I&apos;m David Kim,</h1>
-            <h3 className={styles.imageText}>a Software Engineer</h3>
-          </div>
-        </div>
+        <Introduction />
+        <AboutMe />
 
       </main>
 

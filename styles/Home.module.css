@@ -1,3 +1,5 @@
+/********** Introduction **********/
+
 .imageContainer {
   position: relative;
 }
@@ -15,4 +17,21 @@
 
 .imageText {
   font-size: 2vw;
+}
+
+/********** About Me **********/
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.selfPortraitContainer {
+  max-width: 30%;
+}
+
+.selfPortrait {
+  max-width: 100%;
+  height: auto;
 }
