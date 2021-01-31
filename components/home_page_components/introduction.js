@@ -1,5 +1,6 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
+import { Image, Navbar, Nav } from 'react-bootstrap';
+import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 
 export default function Introduction() {
