@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 
 import Introduction from '../components/home_page_components/introduction';
 import Passion from '../components/home_page_components/passion';
+import AboutMe from '../components/home_page_components/about_me';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Introduction />
         <Passion />
+        <AboutMe />
 
       </main>
 
