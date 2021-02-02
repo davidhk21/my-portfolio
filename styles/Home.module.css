@@ -64,6 +64,7 @@
   color: white;
   background-color: #0d0d0d;
   height: 120vh;
+  max-height: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,9 +72,15 @@
 }
 
 .aboutMeInfoContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 100px;
+  border: 1px solid white;
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .aboutMeInfoContainer {
+    flex-direction: column;
+  }
 }
 
 .aboutMeDescContainer {
