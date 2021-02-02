@@ -185,3 +185,22 @@
   color: #e1a87a;
   border: none;
 }
+
+/********** Contact **********/
+
+.contactContainer {
+  height: 60vh;
+  width: 100%;
+  max-height: 600px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; */
+}
+
+.contactBackgroundImage {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
