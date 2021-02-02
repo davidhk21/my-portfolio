@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 
 import Introduction from '../components/home_page_components/introduction';
 import Passion from '../components/home_page_components/passion';
 import AboutMe from '../components/home_page_components/about_me';
+import Projects from '../components/home_page_components/projects';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <Introduction />
         <Passion />
         <AboutMe />
-
+        <Projects />
       </main>
 
     </div>
