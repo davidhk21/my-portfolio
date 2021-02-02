@@ -161,3 +161,18 @@
   width: 18rem;
   margin: 20px;
 }
+
+.buttonSeeProjects {
+  border: 1px solid #e1a87a;
+  color: black;
+  padding: 20px;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 10vh;
+}
+.buttonSeeProjects:hover {
+  text-decoration: none;
+  background-color: black;
+  color: #e1a87a;
+  border: none;
+}

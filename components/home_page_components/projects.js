@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 
 export default function Projects() {
@@ -35,6 +36,9 @@ export default function Projects() {
           </Card.Body>
         </Card>
       </div>
+      <Link href="/portfolio">
+        <a className={styles.buttonSeeProjects}>SEE PROJECTS</a>
+      </Link>
     </div>
   );
 }
