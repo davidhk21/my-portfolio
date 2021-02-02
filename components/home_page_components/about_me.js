@@ -4,7 +4,7 @@ import styles from '../../styles/Home.module.css';
 export default function AboutMe() {
   return (
     <div className={styles.aboutMeContainer}>
-      <h1>A little bit about myself...</h1>
+      <h1 className={styles.aboutMeTitle}>A little bit about myself...</h1>
       <div className={styles.aboutMeInfoContainer}>
         <div className={styles.aboutMeDescContainer}>
           <h3 className={styles.aboutMeCategories}>Hands</h3>
