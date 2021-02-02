@@ -5,6 +5,7 @@ import Introduction from '../components/home_page_components/introduction';
 import Passion from '../components/home_page_components/passion';
 import AboutMe from '../components/home_page_components/about_me';
 import Projects from '../components/home_page_components/projects';
+import Contact from '../components/home_page_components/contact';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Passion />
         <AboutMe />
         <Projects />
+        <Contact />
       </main>
 
     </div>
