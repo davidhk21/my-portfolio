@@ -104,3 +104,15 @@
 .aboutMeDescText {
   line-height: 1.8em;
 }
+
+.buttonLearnMore {
+  border: 1px solid #e1a87a;
+  color: white;
+  padding: 20px;
+  margin-top: 100px;
+}
+.buttonLearnMore:hover {
+  text-decoration: none;
+  background-color: #e1a87a;
+  color: black;
+}

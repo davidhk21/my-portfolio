@@ -17,6 +17,9 @@ export default function NavBar() {
           <Link href="/portfolio" passHref>
             <Nav.Link>Portfolio</Nav.Link>
           </Link>
+          <Link href="/about" passHref>
+            <Nav.Link>About</Nav.Link>
+          </Link>
           <Link href="/contact_me" passHref>
             <Nav.Link>Contact</Nav.Link>
           </Link>

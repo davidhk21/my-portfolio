@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function AboutMe() {
   return (
@@ -19,6 +20,9 @@ export default function AboutMe() {
           <p className={styles.aboutMeDescText}>Though I&apos;m confident in my knowledge, skills, and abilities, I recognize that I will always be a work in progress.</p>
         </div>
       </div>
+      <Link href="/about">
+        <a className={styles.buttonLearnMore}>LEARN MORE</a>
+      </Link>
     </div>
   );
 }
