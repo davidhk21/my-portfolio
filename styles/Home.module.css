@@ -48,18 +48,18 @@
 
 .passionInfoContainer {
   width: 40vw;
-  max-width: 1200px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .passionTitle {
-  font-size: max(3vw, 30px);
+  font-size: 2em;
 }
 
 .passionDesc {
-  font-size: max(1.5vw, 15px);
+  font-size: 1.2em;
 }
 
 /********** AboutMe **********/
@@ -75,11 +75,18 @@
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 750px) {
+  .aboutMeContainer {
+    height: 170vh;
+    max-height: 2000px;
+  }
+}
 
 .aboutMeTitle {
   position: absolute;
   margin: 0 auto;
   top: 20vh;
+  font-size: 4em;
 }
 
 .aboutMeInfoContainer {
@@ -104,10 +111,12 @@
 
 .aboutMeCategories {
   color: #e1a87a;
+  font-size: 2em;
 }
 
 .aboutMeDescText {
   line-height: 1.8em;
+  font-size: 1.2em;
 }
 
 .buttonLearnMore {
