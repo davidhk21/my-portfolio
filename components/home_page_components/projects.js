@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../../styles/Home.module.css';
 import { Card, Button } from 'react-bootstrap';
+import styles from '../../styles/Home.module.css';
 
 export default function Projects() {
   return (

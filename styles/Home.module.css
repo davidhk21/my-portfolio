@@ -126,17 +126,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 750px) {
+  .projectsContainer {
+    height: 200vh;
+    max-height: 2000px;
+  }
 }
 
 .projectsTitle {
-  margin-bottom: 100px;
+  position: absolute;
+  top: 10vh;
+  margin: 0 auto;
 }
 
 .cardContainer {
   display: flex;
 }
+@media screen and (max-width: 750px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+}
 
 .card {
   width: 18rem;
-  margin: 0 20px;
+  margin: 20px;
 }
