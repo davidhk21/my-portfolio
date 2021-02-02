@@ -55,21 +55,11 @@
 }
 
 .passionTitle {
-  font-size: 3vw;
-}
-@media screen and (max-width: 750px) {
-  .passionTitle {
-    font-size: 30px;
-  }
+  font-size: max(3vw, 30px);
 }
 
 .passionDesc {
-  font-size: 1.5vw;
-}
-@media screen and (max-width: 750px) {
-  .passionDesc {
-    font-size: 15px;
-  }
+  font-size: max(1.5vw, 15px);
 }
 
 /********** AboutMe **********/
@@ -86,12 +76,11 @@
 }
 
 .aboutMeTitle {
-  margin: 0 0 150px 0;
+  margin-bottom: 150px;
 }
 
 .aboutMeInfoContainer {
   margin: 0 100px;
-  border: 1px solid white;
   display: flex;
 }
 @media screen and (max-width: 750px) {
@@ -101,7 +90,6 @@
 }
 
 .aboutMeDescContainer {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,4 +99,8 @@
 
 .aboutMeCategories {
   color: #e1a87a;
+}
+
+.aboutMeDescText {
+  line-height: 1.8em;
 }
