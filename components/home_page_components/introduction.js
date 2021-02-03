@@ -8,6 +8,7 @@ export default function Introduction() {
       <Image
         src="/prof_pic.JPG"
         alt="Picture of the author"
+        className={styles.introImage}
         fluid
       />
       <div className={styles.imageTextContainer}>

@@ -2,6 +2,11 @@
 
 .imageContainer {
   position: relative;
+  background: black;
+}
+
+.introImage {
+  opacity: .4;
 }
 
 .imageTextContainer {
@@ -198,14 +203,8 @@
   align-items: center;
   position: relative; */
   background: black;
-}
-
-.contactImageContainer {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
   position: relative;
-  opacity: 0.4;
 }
 
 .contactBackgroundImage {
@@ -215,4 +214,10 @@
   top: 0;
   bottom: 0;
   margin: auto;
+  opacity: 0.4;
+}
+@media screen and (max-width: 750px) {
+  .contactBackgroundImage {
+    width: 150%;
+  }
 }
