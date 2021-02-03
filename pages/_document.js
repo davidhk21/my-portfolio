@@ -5,7 +5,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <script src="https://apps.elfsight.com/p/platform.js" defer />
+        </Head>
         <body>
           <Main />
           <NextScript />

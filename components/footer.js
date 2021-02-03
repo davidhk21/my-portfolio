@@ -22,6 +22,7 @@ export default function Footer() {
         </Link>
       </Nav>
       <p className={styles.copyright}>&copy; 2021 David Kim. All rights reserved.</p>
+      <div className="elfsight-app-35468a62-3613-4406-9a8c-b980289619da" />
     </div>
   );
 }
