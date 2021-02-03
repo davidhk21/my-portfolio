@@ -7,7 +7,7 @@ export default function Passion() {
     <div className={styles.passionContainer1}>
       <div className={styles.selfPortraitContainer}>
         <Image
-          src="/self_portrait.JPG"
+          src="/Me.png"
           alt="Picture of the author"
           className={styles.selfPortrait}
         />

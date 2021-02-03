@@ -33,10 +33,12 @@
   align-items: center;
   height: 120vh;
   max-height: 1200px;
+  background: #f0f0f0;
 }
 @media screen and (max-width: 750px) {
   .passionContainer1 {
     flex-direction: column;
+    height: 150vh;
   }
 }
 
@@ -63,7 +65,7 @@
 }
 
 .passionDesc {
-  font-size: 1.2em;
+
 }
 
 /********** AboutMe **********/

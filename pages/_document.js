@@ -6,7 +6,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script src="https://apps.elfsight.com/p/platform.js" defer />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />

@@ -18,5 +18,13 @@ a {
 }
 
 p {
-  font-family: Arial;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: .5px;
+  line-height: 2em;
+  color: gray;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
