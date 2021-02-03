@@ -197,11 +197,10 @@
 .contactContainer {
   height: 60vh;
   max-height: 600px;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; */
   background: black;
   overflow: hidden;
   position: relative;
@@ -220,4 +219,34 @@
   .contactBackgroundImage {
     width: 150%;
   }
+}
+
+.contactTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+  z-index: 1;
+}
+
+.contactTitle {
+  color: #e1a87a;
+}
+
+.contactQuestion {
+  color: white;
+}
+
+.buttonHelp {
+  border: 1px solid #e1a87a;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+.buttonHelp:hover {
+  text-decoration: none;
+  background-color: #e1a87a;
+  color: black;
 }
