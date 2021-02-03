@@ -11,17 +11,17 @@
 
 .imageTextContainer {
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 13%;
+  left: 6%;
   color: white;
 }
 
 .imageTitle {
-  font-size: 3.5vw;
+  font-size: 6vw;
 }
 
 .imageText {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 /********** Passion **********/

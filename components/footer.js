@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { Nav } from 'react-bootstrap';
-// import { IoLogoInstagram } from 'react-icons/io';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../styles/App.module.css';
 
