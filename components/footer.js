@@ -25,9 +25,20 @@ export default function Footer() {
         </Link>
       </Nav>
       <p className={styles.copyright}>&copy; 2021 David Kim. All rights reserved.</p>
-      <a className={styles.instagramContainer}>
-        <FontAwesomeIcon icon={['fab', 'instagram']} className={styles.instagram} />
-      </a>
+      <div className={styles.iconsContainer}>
+        <a href="https://www.instagram.com/davidhk21/" target="_blank" rel="noopener noreferrer" className={styles.instagramContainer}>
+          <FontAwesomeIcon icon={['fab', 'instagram']} className={styles.instagram} />
+        </a>
+        <a href="https://www.instagram.com/davidhk21/" target="_blank" rel="noopener noreferrer" className={styles.instagramContainer}>
+          <FontAwesomeIcon icon={['fab', 'instagram']} className={styles.instagram} />
+        </a>
+        <a href="https://www.instagram.com/davidhk21/" target="_blank" rel="noopener noreferrer" className={styles.instagramContainer}>
+          <FontAwesomeIcon icon={['fab', 'instagram']} className={styles.instagram} />
+        </a>
+        <a href="https://www.instagram.com/davidhk21/" target="_blank" rel="noopener noreferrer" className={styles.instagramContainer}>
+          <FontAwesomeIcon icon={['fab', 'instagram']} className={styles.instagram} />
+        </a>
+      </div>
     </div>
   );
 }
