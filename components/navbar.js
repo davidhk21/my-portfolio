@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Navbar, Nav } from 'react-bootstrap';
-import styles from '../styles/Navbar.module.css';
+import styles from '../styles/App.module.css';
 
 export default function NavBar() {
   return (

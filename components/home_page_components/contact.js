@@ -14,10 +14,10 @@ export default function Contact() {
       <div className={styles.contactTextContainer}>
         <h3 className={styles.contactTitle}>Web Developer</h3>
         <h1 className={styles.contactQuestion}>Need a Front-End/Full Stack Software Engineer or have any questions?</h1>
+        <Link href="/contact_me">
+          <a className={styles.buttonHelp}>I&apos;M HERE TO HELP YOU</a>
+        </Link>
       </div>
-      <Link href="/contact_me">
-        <a className={styles.buttonHelp}>I&apos;M HERE TO HELP YOU</a>
-      </Link>
     </div>
   );
 }
