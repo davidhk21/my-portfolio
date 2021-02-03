@@ -6,22 +6,22 @@ import styles from '../styles/App.module.css';
 export default function Footer() {
   return (
     <div className={styles.footerContainer}>
-      <h1>Let&apos;s Connect!</h1>
+      <h1 className={styles.footerTitle}>Let&apos;s Connect!</h1>
       <Nav>
         <Link href="/" passHref>
-          <Nav.Link>Home</Nav.Link>
+          <Nav.Link className={styles.links}>HOME</Nav.Link>
         </Link>
         <Link href="/portfolio" passHref>
-          <Nav.Link>Portfolio</Nav.Link>
+          <Nav.Link className={styles.links}>PORTFOLIO</Nav.Link>
         </Link>
         <Link href="/about" passHref>
-          <Nav.Link>About</Nav.Link>
+          <Nav.Link className={styles.links}>ABOUT</Nav.Link>
         </Link>
         <Link href="/contact_me" passHref>
-          <Nav.Link>Contact</Nav.Link>
+          <Nav.Link className={styles.links}>CONTACT</Nav.Link>
         </Link>
       </Nav>
-      <p>&copy; 2021 David Kim. All rights reserved.</p>
+      <p className={styles.copyright}>&copy; 2021 David Kim. All rights reserved.</p>
     </div>
   );
 }

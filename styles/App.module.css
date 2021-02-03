@@ -19,3 +19,17 @@
   align-items: center;
   background: black;
 }
+
+.footerTitle {
+  color: white;
+  font-size: 3.2em;
+}
+
+.links {
+  color: white;
+  margin: 50px 0;
+}
+
+.copyright {
+  color: #7a7d7f;
+}
