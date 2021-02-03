@@ -33,3 +33,34 @@
 .copyright {
   color: #7a7d7f;
 }
+
+.hideContainer {
+  position: relative;
+  border: 1px solid white;
+}
+
+.hide {
+  height: 40px;
+  width: 40px;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  z-index: ;
+}
+
+.instagramContainer {
+  height: 35px;
+  width: 35px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram {
+  height: 25px;
+  width: 25px
+}

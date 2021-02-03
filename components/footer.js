@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { Nav } from 'react-bootstrap';
+// import { IoLogoInstagram } from 'react-icons/io';
 import styles from '../styles/App.module.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer() {
   return (
@@ -22,7 +25,9 @@ export default function Footer() {
         </Link>
       </Nav>
       <p className={styles.copyright}>&copy; 2021 David Kim. All rights reserved.</p>
-      <div className="elfsight-app-35468a62-3613-4406-9a8c-b980289619da" />
+      <a className={styles.instagramContainer}>
+        <FontAwesomeIcon icon={['fab', 'instagram']} className={styles.instagram} />
+      </a>
     </div>
   );
 }
