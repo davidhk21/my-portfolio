@@ -116,18 +116,25 @@
   text-align: center;
 }
 
-.aboutMeCategories {
+/* .aboutMeCategories {
   color: #e1a87a;
   font-size: 1.3em;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
+} */
+
+.iconBody {
+  font-size: 50px;
+  color: #e1a87a;
+  margin-bottom: 10px;
 }
 
 .aboutMeDescText {
   line-height: 1.8em;
   font-size: 1.2em;
 }
+
 
 .buttonLearnMore {
   border: 1px solid #e1a87a;
