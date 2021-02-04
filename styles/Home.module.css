@@ -172,6 +172,7 @@
   position: absolute;
   top: 10vh;
   margin: 0 auto;
+  font-size: 4em;
 }
 
 .cardContainer {
@@ -186,6 +187,15 @@
 .card {
   width: 18rem;
   margin: 20px;
+}
+
+.cardImage {
+  height: 200px;
+}
+
+.pluckImage {
+  width: 200px;
+  margin: 0 auto;
 }
 
 .buttonSeeProjects {

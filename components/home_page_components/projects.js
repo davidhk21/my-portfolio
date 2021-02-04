@@ -9,7 +9,7 @@ export default function Projects() {
       <h1 className={styles.projectsTitle}>Projects</h1>
       <div className={styles.cardContainer}>
         <Card className={styles.card}>
-          <Card.Img variant="top" src="prof_pic.jpg" />
+          <Card.Img variant="top" src="PhotoGallery.png" className={styles.cardImage} />
           <Card.Body>
             <Card.Title>Homents</Card.Title>
             <Card.Text>
@@ -18,7 +18,7 @@ export default function Projects() {
           </Card.Body>
         </Card>
         <Card className={styles.card}>
-          <Card.Img variant="top" src="prof_pic.jpg" />
+          <Card.Img variant="top" src="system-design.jpg" className={styles.cardImage} />
           <Card.Body>
             <Card.Title>NearMiss</Card.Title>
             <Card.Text>
@@ -27,7 +27,7 @@ export default function Projects() {
           </Card.Body>
         </Card>
         <Card className={styles.card}>
-          <Card.Img variant="top" src="prof_pic.jpg" />
+          <Card.Img variant="top" src="pluck-logo.png" className={`${styles.cardImage} ${styles.pluckImage}`} />
           <Card.Body>
             <Card.Title>Pluck</Card.Title>
             <Card.Text>
