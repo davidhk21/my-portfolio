@@ -81,7 +81,7 @@
   align-items: center;
   position: relative;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   .aboutMeContainer {
     height: 170vh;
     max-height: 2000px;
@@ -100,7 +100,7 @@
   margin: 0 100px;
   display: flex;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   .aboutMeInfoContainer {
     flex-direction: column;
   }
@@ -161,7 +161,7 @@
   align-items: center;
   position: relative;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   .projectsContainer {
     height: 250vh;
     max-height: 2500px;
@@ -178,7 +178,7 @@
 .cardContainer {
   display: flex;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   .cardContainer {
     flex-direction: column;
   }

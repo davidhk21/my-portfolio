@@ -6,25 +6,27 @@ import styles from '../styles/App.module.css';
 export default function NavBar() {
   return (
     <div className={styles.navBarContainer}>
+      <Navbar.Brand href="/" className={styles.brand}>
+        David Kim
+      </Navbar.Brand>
       <Navbar variant="dark">
-        <Navbar.Brand href="/">
-          David Kim
-        </Navbar.Brand>
-        <Nav className="mr-auto">
+        <Nav className={styles.navLinks}>
           <Link href="/" passHref>
-            <Nav.Link>Home</Nav.Link>
+            <a className={styles.navLink}>HOME</a>
           </Link>
           <Link href="/portfolio" passHref>
-            <Nav.Link>Portfolio</Nav.Link>
+            <a className={styles.navLink}>PORTFOLIO</a>
           </Link>
           <Link href="/about" passHref>
-            <Nav.Link>About</Nav.Link>
-          </Link>
-          <Link href="/contact_me" passHref>
-            <Nav.Link>Contact</Nav.Link>
+            <a className={styles.navLink}>ABOUT</a>
           </Link>
         </Nav>
       </Navbar>
+      <div className={styles.contactContainer}>
+        <Link href="/contact_me" passHref>
+          <a className={styles.navLink}>CONTACT</a>
+        </Link>
+      </div>
     </div>
   );
 }

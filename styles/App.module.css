@@ -2,10 +2,35 @@
 
 .navBarContainer {
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 1;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.navLink {
+  color:#7a7d7f;
+  margin: 0 10px;
+}
+.navLink:hover {
+  text-decoration: none;
+  color:#e1a87a;
+}
+
+.navLinks {
+  margin: 0 auto;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 /********** Footer **********/
