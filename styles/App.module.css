@@ -2,6 +2,7 @@
 
 .navBarContainer {
   position: absolute;
+  top: 20px;
   z-index: 1;
   width: 100%;
   display: flex;
@@ -12,6 +13,9 @@
   color: white;
   font-size: 25px;
   margin-left: 20px;
+}
+.brand:hover {
+  color: white;
 }
 
 .navLink {
