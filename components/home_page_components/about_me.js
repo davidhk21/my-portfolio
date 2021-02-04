@@ -8,15 +8,15 @@ export default function AboutMe() {
       <h1 className={styles.aboutMeTitle}>A little bit about myself...</h1>
       <div className={styles.aboutMeInfoContainer}>
         <div className={styles.aboutMeDescContainer}>
-          <h3 className={styles.aboutMeCategories}>Hands</h3>
+          <h3 className={styles.aboutMeCategories}>HANDS</h3>
           <p className={styles.aboutMeDescText}>&quot;As the body moves, the mind grooves&quot;. I love being active and you can most likely catch me at a volleyball open gym.</p>
         </div>
         <div className={styles.aboutMeDescContainer}>
-          <h3 className={styles.aboutMeCategories}>Heart</h3>
+          <h3 className={styles.aboutMeCategories}>HEART</h3>
           <p className={styles.aboutMeDescText}>I believe that a person&apos;s opinion of the world is also a confession of character.</p>
         </div>
         <div className={styles.aboutMeDescContainer}>
-          <h3 className={styles.aboutMeCategories}>Head</h3>
+          <h3 className={styles.aboutMeCategories}>HEAD</h3>
           <p className={styles.aboutMeDescText}>Though I&apos;m confident in my knowledge, skills, and abilities, I recognize that I will always be a work in progress.</p>
         </div>
       </div>
