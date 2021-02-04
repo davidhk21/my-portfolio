@@ -22,7 +22,7 @@ export default function Projects() {
           <Card.Body>
             <Card.Title>NearMiss</Card.Title>
             <Card.Text>
-              Scaled and redesigned the backend of a digital retail marketplace for users to search, purchase, and review products
+              Scaled and redesigned the backend of a digital retail marketplace for users to search, purchase, and review products.
             </Card.Text>
           </Card.Body>
         </Card>
