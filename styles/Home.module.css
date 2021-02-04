@@ -154,7 +154,7 @@
 
 .projectsContainer {
   height: 120vh;
-  max-height: 1200px;
+  max-height: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,8 +163,8 @@
 }
 @media screen and (max-width: 750px) {
   .projectsContainer {
-    height: 200vh;
-    max-height: 2000px;
+    height: 250vh;
+    max-height: 2500px;
   }
 }
 
