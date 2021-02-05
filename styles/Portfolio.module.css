@@ -20,6 +20,15 @@
   font-size: 6vw;
 }
 
-.imageText {
-  font-size: 3vw;
+.resumeDownload {
+  border: 1px solid #e1a87a;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  top: 120%;
+}
+.resumeDownload:hover {
+  text-decoration: none;
+  color: black;
+  background: #e1a87a;
 }
