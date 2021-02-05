@@ -1,13 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Fade from 'react-reveal/Fade';
 import styles from '../../styles/Portfolio.module.css';
 
 export default function Projects() {
   return (
-    <div>
+    <div className={styles.projectsContainer}>
       <h4 className={styles.projectsTitle}>PROJECTS</h4>
-      <div className={styles.projectsContainer}>
+      <Fade distance="100px" delay={500} left>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
@@ -25,7 +25,8 @@ export default function Projects() {
             <p>This is a description of the project that I am currently referring to. I am making this text long so I can see how it can look as I am developing this page.</p>
           </div>
         </div>
-
+      </Fade>
+      <Fade distance="100px" delay={500} right>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
@@ -43,7 +44,8 @@ export default function Projects() {
             <p>This is a description of the project that I am currently referring to. I am making this text long so I can see how it can look as I am developing this page.</p>
           </div>
         </div>
-
+      </Fade>
+      <Fade distance="100px" delay={500} left>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
@@ -61,7 +63,7 @@ export default function Projects() {
             <p>This is a description of the project that I am currently referring to. I am making this text long so I can see how it can look as I am developing this page.</p>
           </div>
         </div>
-      </div>
+      </Fade>
     </div>
   );
 }
