@@ -32,3 +32,18 @@
   color: black;
   background: #e1a87a;
 }
+
+/********** Skills **********/
+
+.skillsContainer {
+  height: 80vh;
+  background:#f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.skillsListContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
