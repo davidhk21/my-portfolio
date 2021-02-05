@@ -40,12 +40,24 @@
   background:#f0f0f0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .skillsListContainer {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+  .skillsContainer {
+    height: 200vh;
+  }
+  .skillsListContainer {
+    flex-direction: column;
+    width:auto;
+  }
 }
 
 /********** Projects **********/
@@ -66,15 +78,6 @@
   display: flex;
   justify-content: center;
   margin: 50px 0;
-}
-@media screen and (max-width: 1000px) {
-  .projectsContainer {
-    height: 230vh;
-  }
-  .projectContainer {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .leftContainer {
@@ -107,4 +110,14 @@
 .github:hover {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectsContainer {
+    height: 230vh;
+  }
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
