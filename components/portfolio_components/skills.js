@@ -7,7 +7,7 @@ export default function Skills() {
     <div className={styles.skillsContainer}>
       <div className={styles.skillsListContainer}>
         <div>
-          <p>TECHNOLOGIES</p>
+          <h4>TECHNOLOGIES</h4>
         </div>
         <div>
           <p>FRONT-END</p>
