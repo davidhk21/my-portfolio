@@ -126,14 +126,14 @@
 /********** More Facts **********/
 
 .funFactsContainer {
-  height: 250vh;
+  height: 400vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .funFactsMiniContainer {
-  height: 90%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -146,14 +146,17 @@
 }
 
 .description {
-  width: 500px;
+  width: 35vw;
+  max-width: 600px;
   margin: 0 25px;
   text-align: center;
 }
 
 .circleImageContainer {
-  width: 300px;
-  height: 300px;
+  width: 30vw;
+  height: 30vw;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 25px;
