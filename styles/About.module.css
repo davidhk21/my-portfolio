@@ -147,7 +147,7 @@
 
 .description {
   width: 500px;
-  margin-right: 25px;
+  margin: 0 25px;
   text-align: center;
 }
 
@@ -156,10 +156,18 @@
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
-  margin-left: 25px;
+  margin: 0 25px;
 }
 
 .circleImage {
   width: 100%;
   height: 100%;
+}
+
+.imageLeft {
+  order: 1;
+}
+
+.descriptionRight {
+  order: 2;
 }
