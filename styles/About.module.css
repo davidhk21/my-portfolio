@@ -1,0 +1,21 @@
+/********** Intro **********/
+
+.imageContainer {
+  position: relative;
+  background: black;
+}
+
+.introImage {
+  opacity: .4;
+}
+
+.imageTextContainer {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+  color: white;
+}
+
+.imageTitle {
+  font-size: 6vw;
+}
