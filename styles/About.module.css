@@ -73,40 +73,33 @@
   grid-template-rows: 1fr 1fr;
 }
 
-.picture1Container {
-  grid-area: 'picture1';
+.pictureContainer {
   overflow: hidden;
-  position: relative
+  position: relative;
+}
+
+.picture1Container {
+  grid-area: 'picture1'
 }
 
 .picture2Container {
   grid-area: 'picture2';
-  overflow: hidden;
-  position: relative;
 }
 
 .picture3Container {
   grid-area: 'picture3';
-  overflow: hidden;
-  position: relative;
 }
 
 .picture4Container {
   grid-area: 'picture4';
-  overflow: hidden;
-  position: relative;
 }
 
 .picture5Container {
   grid-area: 'picture5';
-  overflow: hidden;
-  position: relative;
 }
 
 .picture6Container {
   grid-area: 'picture6';
-  overflow: hidden;
-  position: relative;
 }
 
 .picture {
