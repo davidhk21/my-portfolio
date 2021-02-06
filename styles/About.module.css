@@ -20,7 +20,7 @@
   font-size: 6vw;
 }
 
-/********** Passion **********/
+/********** Fun Facts **********/
 
 .funFactsContainer1 {
   display: flex;
@@ -60,7 +60,7 @@
   font-size: 2em;
 }
 
-/********** Passion **********/
+/********** Pictures **********/
 
 .picturesContainer {
   height: 80vh;
@@ -121,4 +121,45 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
+}
+
+/********** More Facts **********/
+
+.funFactsContainer {
+  height: 250vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.funFactsMiniContainer {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.funFactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  width: 500px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+.circleImageContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 25px;
+}
+
+.circleImage {
+  width: 100%;
+  height: 100%;
 }
