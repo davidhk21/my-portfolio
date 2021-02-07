@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# email config
+contact_config.js
