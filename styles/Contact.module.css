@@ -32,3 +32,23 @@
   color: black;
   background: #e1a87a;
 }
+
+/********** Contact Form **********/
+
+.contactFormContainer {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionsContainer {
+  display: flex;
+  width: 80%;
+}
+
+.questionContainer {
+  border: 1px solid black;
+  text-align: right;
+}
