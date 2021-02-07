@@ -18,8 +18,18 @@ export default function ContactForm() {
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
+
   const handleFormContentChange = (e) => {
     setFormContent(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // do something
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setFormContent('');
   };
 
   return (
@@ -36,7 +46,7 @@ export default function ContactForm() {
         </div>
       </div>
       <div>
-        <form>
+        <form onSubmit={handleSubmit} className={styles.formContainer}>
           <label htmlFor="first-name">
             First Name:
             <input type="text" value={firstName} onChange={handleFirstNameChange} />

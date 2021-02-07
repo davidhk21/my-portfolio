@@ -52,3 +52,8 @@
   border: 1px solid black;
   text-align: right;
 }
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
