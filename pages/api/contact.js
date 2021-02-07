@@ -11,11 +11,8 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export default (req, res) => {
-  const { firstName, lastName, email, content } = req.body;
-
+const mailer = ({ firstName, lastName, email, content }) => {
   const from = `${firstName} ${lastName} <${email}>`;
-
   const message = {
     from,
     to: 'davidhk21@gmail.com',
@@ -24,12 +21,21 @@ export default (req, res) => {
     replyTo: from,
   };
 
-  transporter.sendMail(message, (err, info) => {
-    if (err) {
-      console.error(err);
-      res.status(404).send(err);
-    } else {
-      res.status(200).send('Email sent: ', info);
-    }
+  return new Promise((resolve, reject) => {
+    transporter.sendMail(message, (err, info) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(info);
+      }
+    });
   });
+};
+
+export default async (req, res) => {
+  const { firstName, lastName, email, content } = req.body;
+
+  const mailerRes = await mailer({ firstName, lastName, email, content });
+
+  res.send(mailerRes);
 };

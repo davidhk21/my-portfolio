@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import sendContactMail from '../../utils/mail_api';
 import styles from '../../styles/Contact.module.css';
 
 export default function ContactForm() {
@@ -25,7 +26,9 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // do something
+
+    sendContactMail(firstName, lastName, email, formContent);
+
     setFirstName('');
     setLastName('');
     setEmail('');
