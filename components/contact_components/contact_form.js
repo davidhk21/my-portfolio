@@ -44,13 +44,13 @@ export default function ContactForm() {
     <div className={styles.contactFormContainer}>
       <div className={styles.questionsContainer}>
         <div className={styles.questionContainer}>
-          Looking to hire a Software Engineer?
+          Looking to hire a Frontend/Full-Stack Software Engineer?
         </div>
         <div className={styles.questionContainer}>
           Interested in becoming a Software Engineer from a non-technical background?
         </div>
         <div className={styles.questionContainer}>
-          Need help with something?
+          Need help with anything or have any questions?
         </div>
       </div>
       <div>
