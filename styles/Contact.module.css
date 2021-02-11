@@ -59,13 +59,24 @@
   display: flex;
   justify-content: center;
   padding: 50px;
+  height: 500px;
+  position: relative;
+}
+
+.formError {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: .8em;
+  color: red;
 }
 
 .formMiniContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 600px;
-  border: 1px solid red;
+  font-family: 'Raleway', sans-serif;
 }
 
 .firstLastFields {
@@ -73,19 +84,45 @@
   justify-content: space-between;
 }
 
-.nameInputs {
+.nameInputsContainer {
   display: flex;
   flex-direction: column;
   width: 49%;
 }
 
+.nameInputs {
+  height: 2.2em;
+  width: 100%;
+  border: 1px solid #C4C4C4;
+  padding: 5px;
+}
+
 .emailInput {
   width: 100%;
   height: 2em;
+  border: 1px solid #C4C4C4;
+  padding: 5px;
 }
 
 .contentInput {
   width: 100%;
   height: 100px;
   resize: none;
+  border: 1px solid #C4C4C4;
+  padding: 5px;
+}
+
+.submitContact {
+  border: 1px solid #e1a87a;
+  color: black;
+  padding: 20px;
+  margin: 0 auto;
+  bottom: 10vh;
+  background: white;
+}
+.submitContact:hover {
+  text-decoration: none;
+  background-color: black;
+  color: #e1a87a;
+  border-color: black;
 }

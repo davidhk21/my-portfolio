@@ -55,27 +55,27 @@ export default function ContactForm() {
       </div>
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
+          {fieldsError ? <div className={styles.formError}>Your form has encountered a problem. Please make sure all the fields are filled and that the email entered is valid.</div> : null}
           <div className={styles.formMiniContainer}>
-            {fieldsError ? <div>All fields need to be filled, or if all fields are filled, make sure email is valid</div> : null}
             <div className={styles.firstLastFields}>
-              <label htmlFor="first-name" className={styles.nameInputs}>
-                First Name:
-                <input type="text" value={firstName} onChange={handleFirstNameChange} />
+              <label htmlFor="first-name" className={styles.nameInputsContainer}>
+                First Name *
+                <input type="text" value={firstName} onChange={handleFirstNameChange} className={styles.nameInputs} />
               </label>
-              <label htmlFor="last-name" className={styles.nameInputs}>
-                Last Name:
-                <input type="text" value={lastName} onChange={handleLastNameChange} />
+              <label htmlFor="last-name" className={styles.nameInputsContainer}>
+                Last Name *
+                <input type="text" value={lastName} onChange={handleLastNameChange} className={styles.nameInputs} />
               </label>
             </div>
             <label htmlFor="email">
-              Email:
+              Email *
               <input type="email" value={email} onChange={handleEmailChange} className={styles.emailInput} />
             </label>
             <label htmlFor="form-content">
-              Form Content:
+              Your Message *
               <textarea type="text" value={formContent} onChange={handleFormContentChange} className={styles.contentInput} />
             </label>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="SEND MESSAGE" className={styles.submitContact} />
           </div>
         </form>
       </div>
