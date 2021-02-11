@@ -7,6 +7,7 @@ export default function ContactForm() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [formContent, setFormContent] = useState('');
+  const [fieldsError, setFieldsError] = useState(false);
 
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
@@ -26,8 +27,12 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    sendContactMail(firstName, lastName, email, formContent);
+    if (firstName && lastName && email && formContent) {
+      setFieldsError(false);
+      sendContactMail(firstName, lastName, email, formContent);
+    } else {
+      setFieldsError(true);
+    }
 
     setFirstName('');
     setLastName('');
@@ -50,6 +55,7 @@ export default function ContactForm() {
       </div>
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
+          {fieldsError ? <div>All fields need to be filled</div> : null}
           <label htmlFor="first-name">
             First Name:
             <input type="text" value={firstName} onChange={handleFirstNameChange} />
