@@ -54,17 +54,30 @@
 }
 
 .formContainer {
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  width: 800px;
+  justify-content: center;
+  padding: 50px;
 }
 
-.firstLastfields {
+.formMiniContainer {
   display: flex;
+  flex-direction: column;
+  width: 600px;
+  border: 1px solid red;
+}
+
+.firstLastFields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameInputs {
+  width: 290px;
 }
 
 .emailInput {
-  width: 300px;
+  width: 100%;
 }
 
 .contentInput {

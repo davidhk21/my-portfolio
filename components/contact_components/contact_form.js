@@ -55,26 +55,28 @@ export default function ContactForm() {
       </div>
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
-          {fieldsError ? <div>All fields need to be filled, or if all fields are filled, make sure email is valid</div> : null}
-          <div className={styles.firstLastFields}>
-            <label htmlFor="first-name">
-              First Name:
-              <input type="text" value={firstName} onChange={handleFirstNameChange} />
+          <div className={styles.formMiniContainer}>
+            {fieldsError ? <div>All fields need to be filled, or if all fields are filled, make sure email is valid</div> : null}
+            <div className={styles.firstLastFields}>
+              <label htmlFor="first-name">
+                {/* First Name: */}
+                <input type="text" value={firstName} onChange={handleFirstNameChange} className={styles.nameInputs}/>
+              </label>
+              <label htmlFor="last-name">
+                {/* Last Name: */}
+                <input type="text" value={lastName} onChange={handleLastNameChange} className={styles.nameInputs} />
+              </label>
+            </div>
+            <label htmlFor="email">
+              {/* Email: */}
+              <input type="email" value={email} onChange={handleEmailChange} className={styles.emailInput} />
             </label>
-            <label htmlFor="last-name">
-              Last Name:
-              <input type="text" value={lastName} onChange={handleLastNameChange} />
+            <label htmlFor="form-content">
+              {/* Form Content: */}
+              <textarea type="text" value={formContent} onChange={handleFormContentChange} className={styles.contentInput} />
             </label>
+            <input type="submit" value="Submit" />
           </div>
-          <label htmlFor="email">
-            Email:
-            <input type="email" value={email} onChange={handleEmailChange} className={styles.emailInput} />
-          </label>
-          <label htmlFor="form-content">
-            Form Content:
-            <textarea type="text" value={formContent} onChange={handleFormContentChange} className={styles.contentInput} />
-          </label>
-          <input type="submit" value="Submit" />
         </form>
       </div>
     </div>
