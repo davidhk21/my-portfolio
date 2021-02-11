@@ -46,6 +46,7 @@
 .questionsContainer {
   display: flex;
   width: 80%;
+  margin-bottom: 50px;
 }
 
 .questionContainer {
@@ -73,11 +74,14 @@
 }
 
 .nameInputs {
-  width: 290px;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
 }
 
 .emailInput {
   width: 100%;
+  height: 2em;
 }
 
 .contentInput {
