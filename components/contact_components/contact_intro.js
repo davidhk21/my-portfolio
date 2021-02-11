@@ -6,7 +6,7 @@ export default function ContactIntro() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src="/contact-background.JPG"
+        src="/contact2-background.JPG"
         alt="Picture of the author"
         className={styles.introImage}
         fluid

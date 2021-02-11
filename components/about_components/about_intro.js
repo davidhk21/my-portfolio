@@ -6,7 +6,7 @@ export default function AboutIntro() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src="/about-me-background.JPG"
+        src="/about2-background.JPG"
         alt="Picture of the author"
         className={styles.introImage}
         fluid
