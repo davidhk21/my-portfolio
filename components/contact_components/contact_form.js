@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import sendContactMail from '../../utils/mail_api';
 import validator from 'validator';
+import sendContactMail from '../../utils/mail_api';
 import styles from '../../styles/Contact.module.css';
 
 export default function ContactForm() {
@@ -56,21 +56,23 @@ export default function ContactForm() {
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
           {fieldsError ? <div>All fields need to be filled, or if all fields are filled, make sure email is valid</div> : null}
-          <label htmlFor="first-name">
-            First Name:
-            <input type="text" value={firstName} onChange={handleFirstNameChange} />
-          </label>
-          <label htmlFor="last-name">
-            Last Name:
-            <input type="text" value={lastName} onChange={handleLastNameChange} />
-          </label>
+          <div className={styles.firstLastFields}>
+            <label htmlFor="first-name">
+              First Name:
+              <input type="text" value={firstName} onChange={handleFirstNameChange} />
+            </label>
+            <label htmlFor="last-name">
+              Last Name:
+              <input type="text" value={lastName} onChange={handleLastNameChange} />
+            </label>
+          </div>
           <label htmlFor="email">
             Email:
-            <input type="email" value={email} onChange={handleEmailChange} />
+            <input type="email" value={email} onChange={handleEmailChange} className={styles.emailInput} />
           </label>
           <label htmlFor="form-content">
             Form Content:
-            <input type="text" value={formContent} onChange={handleFormContentChange} />
+            <textarea type="text" value={formContent} onChange={handleFormContentChange} className={styles.contentInput} />
           </label>
           <input type="submit" value="Submit" />
         </form>
