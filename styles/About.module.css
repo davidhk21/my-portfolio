@@ -48,8 +48,7 @@
   grid-gap: 50px;
   justify-content: center;
   align-items: center;
-  height: 120vh;
-  max-height: 1200px;
+  padding: 50px;
   background: #f0f0f0;
 }
 @media screen and (max-width: 750px) {
@@ -86,6 +85,7 @@
 .picturesContainer {
   height: 80vh;
   max-height: 1000px;
+  min-height: 600px;
   width: 100%;
   display: grid;
   grid-template-areas: 'picture1 picture2 picture3'
@@ -147,11 +147,10 @@
 /********** More Facts **********/
 
 .funFactsContainer {
-  height: 400vh;
-  max-height: 4000px;
+  margin: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .funFactsMiniContainer {
@@ -165,6 +164,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20vh 0;
 }
 
 .description {

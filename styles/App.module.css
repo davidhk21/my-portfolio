@@ -42,6 +42,7 @@
 .footerContainer {
   height: 60vh;
   max-height: 600px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;

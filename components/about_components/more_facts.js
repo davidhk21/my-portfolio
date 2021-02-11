@@ -6,7 +6,7 @@ import styles from '../../styles/About.module.css';
 export default function MoreFacts() {
   return (
     <div className={styles.funFactsContainer}>
-      <div className={styles.funFactsMiniContainer}>
+      {/* <div className={styles.funFactsMiniContainer}> */}
         <Fade distance="200px" delay={500} left>
           <div className={styles.funFactContainer}>
             <div className={styles.description}>
@@ -67,7 +67,7 @@ export default function MoreFacts() {
             </div>
           </div>
         </Fade>
-      </div>
+      {/* </div> */}
     </div>
   );
 }
