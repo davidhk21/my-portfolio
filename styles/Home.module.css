@@ -85,7 +85,6 @@
 @media screen and (max-width: 750px) {
   .passionContainer1 {
     flex-direction: column;
-    height: 150vh;
   }
 }
 /********** AboutMe **********/
@@ -99,12 +98,7 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1000px) {
-  .aboutMeContainer {
-    height: 170vh;
-    max-height: 2000px;
-  }
-}
+
 
 .aboutMeTitle {
   font-size: 4em;
@@ -143,7 +137,6 @@
   font-size: 1.2em;
 }
 
-
 .buttonLearnMore {
   border: 1px solid #e1a87a;
   color: white;
@@ -164,12 +157,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media screen and (max-width: 1000px) {
-  .projectsContainer {
-    height: 250vh;
-    max-height: 2500px;
-  }
 }
 
 .projectsTitle {
