@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import sendContactMail from '../../utils/mail_api';
+import validator from 'validator';
 import styles from '../../styles/Contact.module.css';
 
 export default function ContactForm() {
@@ -27,17 +28,16 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (firstName && lastName && email && formContent) {
+    if (firstName && lastName && validator.isEmail(email) && formContent) {
       setFieldsError(false);
       sendContactMail(firstName, lastName, email, formContent);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setFormContent('');
     } else {
       setFieldsError(true);
     }
-
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setFormContent('');
   };
 
   return (
@@ -55,7 +55,7 @@ export default function ContactForm() {
       </div>
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
-          {fieldsError ? <div>All fields need to be filled</div> : null}
+          {fieldsError ? <div>All fields need to be filled, or if all fields are filled, make sure email is valid</div> : null}
           <label htmlFor="first-name">
             First Name:
             <input type="text" value={firstName} onChange={handleFirstNameChange} />
@@ -66,7 +66,7 @@ export default function ContactForm() {
           </label>
           <label htmlFor="email">
             Email:
-            <input type="text" value={email} onChange={handleEmailChange} />
+            <input type="email" value={email} onChange={handleEmailChange} />
           </label>
           <label htmlFor="form-content">
             Form Content:
