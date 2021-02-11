@@ -44,7 +44,7 @@
 /********** Contact Form **********/
 
 .contactFormContainer {
-  height: 120vh;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
