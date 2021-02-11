@@ -48,13 +48,12 @@
   grid-gap: 50px;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 100px 0;
   background: #f0f0f0;
 }
 @media screen and (max-width: 750px) {
   .funFactsContainer1 {
     flex-direction: column;
-    height: 150vh;
   }
 }
 
@@ -83,10 +82,8 @@
 /********** Pictures **********/
 
 .picturesContainer {
-  height: 80vh;
   max-height: 1000px;
   min-height: 600px;
-  width: 100%;
   display: grid;
   grid-template-areas: 'picture1 picture2 picture3'
                        'picture4 picture5 picture6';
@@ -148,13 +145,6 @@
 
 .funFactsContainer {
   margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.funFactsMiniContainer {
-  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

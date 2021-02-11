@@ -6,68 +6,66 @@ import styles from '../../styles/About.module.css';
 export default function MoreFacts() {
   return (
     <div className={styles.funFactsContainer}>
-      {/* <div className={styles.funFactsMiniContainer}> */}
-        <Fade distance="200px" delay={500} left>
-          <div className={styles.funFactContainer}>
-            <div className={styles.description}>
-              <h4>Sports</h4>
-              <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
-            </div>
-            <div className={styles.circleImageContainer}>
-              <Image
-                src="/1.jpg"
-                alt="Picture of the author"
-                className={styles.circleImage}
-              />
-            </div>
+      <Fade distance="200px" delay={500} left>
+        <div className={styles.funFactContainer}>
+          <div className={styles.description}>
+            <h4>Sports</h4>
+            <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
           </div>
-        </Fade>
-        <Fade distance="200px" delay={500} right>
-          <div className={styles.funFactContainer}>
-            <div className={`${styles.description} ${styles.descriptionRight}`}>
-              <h4>Sports</h4>
-              <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
-            </div>
-            <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
-              <Image
-                src="/1.jpg"
-                alt="Picture of the author"
-                className={styles.circleImage}
-              />
-            </div>
+          <div className={styles.circleImageContainer}>
+            <Image
+              src="/1.jpg"
+              alt="Picture of the author"
+              className={styles.circleImage}
+            />
           </div>
-        </Fade>
-        <Fade distance="200px" delay={500} left>
-          <div className={styles.funFactContainer}>
-            <div className={styles.description}>
-              <h4>Sports</h4>
-              <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
-            </div>
-            <div className={styles.circleImageContainer}>
-              <Image
-                src="/1.jpg"
-                alt="Picture of the author"
-                className={styles.circleImage}
-              />
-            </div>
+        </div>
+      </Fade>
+      <Fade distance="200px" delay={500} right>
+        <div className={styles.funFactContainer}>
+          <div className={`${styles.description} ${styles.descriptionRight}`}>
+            <h4>Sports</h4>
+            <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
           </div>
-        </Fade>
-        <Fade distance="200px" delay={500} right>
-          <div className={styles.funFactContainer}>
-            <div className={`${styles.description} ${styles.descriptionRight}`}>
-              <h4>Sports</h4>
-              <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
-            </div>
-            <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
-              <Image
-                src="/1.jpg"
-                alt="Picture of the author"
-                className={styles.circleImage}
-              />
-            </div>
+          <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
+            <Image
+              src="/1.jpg"
+              alt="Picture of the author"
+              className={styles.circleImage}
+            />
           </div>
-        </Fade>
-      {/* </div> */}
+        </div>
+      </Fade>
+      <Fade distance="200px" delay={500} left>
+        <div className={styles.funFactContainer}>
+          <div className={styles.description}>
+            <h4>Sports</h4>
+            <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
+          </div>
+          <div className={styles.circleImageContainer}>
+            <Image
+              src="/1.jpg"
+              alt="Picture of the author"
+              className={styles.circleImage}
+            />
+          </div>
+        </div>
+      </Fade>
+      <Fade distance="200px" delay={500} right>
+        <div className={styles.funFactContainer}>
+          <div className={`${styles.description} ${styles.descriptionRight}`}>
+            <h4>Sports</h4>
+            <p>Words to describe the thing that I want to talk about myself. For example, I like to play Volleyball and Basketball on my free time and I really enjoy those sports. This description should be relatively long so I can really describe who I am.</p>
+          </div>
+          <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
+            <Image
+              src="/1.jpg"
+              alt="Picture of the author"
+              className={styles.circleImage}
+            />
+          </div>
+        </div>
+      </Fade>
     </div>
   );
 }
