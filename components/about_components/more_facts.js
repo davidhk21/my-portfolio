@@ -55,7 +55,7 @@ export default function MoreFacts() {
         <div className={styles.funFactContainer}>
           <div className={`${styles.description} ${styles.descriptionRight}`}>
             <h4>Reading/Writing</h4>
-            <p>I&apos;m a big advocate for using physical planners, as I&apos;ve been using them on a daily basis ever since I started using them in beginning of high school. For the past couple of years, I&apos;ve also made the effort to journal everyday (definitely missed some days but it&apos;s okay!) to make sure I reflect and take life day by day in order to improve myself as a human being.</p>
+            <p>I&apos;m a big advocate for using physical planners, as I&apos;ve been using them on a daily basis ever since the beginning of high school. For the past couple of years, I&apos;ve also made the effort to journal everyday (definitely missed some days but it&apos;s okay!) to make sure I reflect and take life day by day.</p>
           </div>
           <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
             <Image
