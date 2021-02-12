@@ -10,7 +10,7 @@ export default function AboutMe() {
       <div className={styles.aboutMeInfoContainer}>
         <div className={styles.aboutMeDescContainer}>
           <FontAwesomeIcon icon={['fas', 'child']} className={styles.iconBody} />
-          <p className={styles.aboutMeDescText}>&quot;As the body moves, the mind grooves&quot;. I love being active and you can most likely catch me at a volleyball open gym.</p>
+          <p className={styles.aboutMeDescText}>&quot;As the body moves, the mind grooves&quot;. I love being active and you can most likely find me at a volleyball open gym.</p>
         </div>
         <div className={styles.aboutMeDescContainer}>
           <FontAwesomeIcon icon={['fas', 'heart']} className={styles.iconBody} />
