@@ -127,11 +127,11 @@
   left: -9999px;
   right: -9999px;
   margin: auto;
-  max-width: 200%;
-  max-height: 200%;
+  max-width: 180%;
+  max-height: 180%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .picturesContainer {
     grid-template-areas: 'picture1 picture2'
                          'picture3 picture4'
