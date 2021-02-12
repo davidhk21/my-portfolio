@@ -22,7 +22,7 @@ export default function Projects() {
           </div>
           <div className={styles.rightContainer}>
             <h4>Homents</h4>
-            <p>This is a description of the project that I am currently referring to. I am making this text long so I can see how it can look as I am developing this page.</p>
+            <p>Homents, a listings page for a real estate website, is a full stack application that I built along with 3 other engineers using Service Oriented Architecture. For my own module, I used React for the front-end, a Node.js and Express server, and MongoDB to persist my data. In order to provide an excellent user interface and experience, I utilized different layout systems such as CSS Grid and Flexbox and integrated the stylings into the React components using Styled-Components in order to provide simple dynamic styling. See Github Link for preview of the application in the README.md.</p>
           </div>
         </div>
       </Fade>
@@ -41,7 +41,7 @@ export default function Projects() {
           </div>
           <div className={styles.rightContainer}>
             <h4>NearMiss</h4>
-            <p>This is a description of the project that I am currently referring to. I am making this text long so I can see how it can look as I am developing this page.</p>
+            <p>For this application, I was tasked to redesign and scale the backend of a retail marketplace website to handle more than 75 million records while measuring performance improvements in different metrics such as latency, throughout, and error rate. Using different stress testing tools such as Artillery.io, Loader.io, and New Relic, I stress tested the application at different RPS (requests per second) levels. I made optimizations in query speeds by testing different databases and using indexing for quicker reads, ultimately reducing query speeds by 89.4%. In addition, I implemented a load balancer and caching using NGINX on both the service and proxy level. As a result, I was able to improve latency by 97%, throughput by 61%, while maintaining a 0% error rate.</p>
           </div>
         </div>
       </Fade>
@@ -60,7 +60,7 @@ export default function Projects() {
           </div>
           <div className={styles.rightContainer}>
             <h4>Pluck</h4>
-            <p>This is a description of the project that I am currently referring to. I am making this text long so I can see how it can look as I am developing this page.</p>
+            <p>Pluck is a cross-platform mobile application built using React-Native in order to help users increase productivity while helping them reach their financial goals. The application uses a task completion system that is built to help users to &quot;learn by doing&quot;. The user will be able to gauge performance using the data visualization tools implemented using Victory.js. Most people know the word &quot;Pluck&quot; as a verb which means &quot;to take hold of or remove from its place&quot;; however, it&apos;s noun definition means &quot;spirited and determined courage&quot;. I created this application in hopes to give users the courage to achieve their goals, whether they are financial, professional, or personal.</p>
           </div>
         </div>
       </Fade>
