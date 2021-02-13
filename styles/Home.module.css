@@ -122,8 +122,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
-  max-width: 500px;
-  width: 300px;
+  max-width: 360px;
   text-align: center;
 }
 
@@ -175,7 +174,9 @@
 }
 
 .cardContainer {
-  display: flex;
+  display: inline-flex;
+  resize: vertical;
+  overflow: auto;
 }
 
 .card {
@@ -205,7 +206,7 @@
   border-color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .cardContainer {
     flex-direction: column;
   }
@@ -264,7 +265,7 @@
   color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .contactBackgroundImage {
     width: 150%;
   }
