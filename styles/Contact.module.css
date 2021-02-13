@@ -34,7 +34,7 @@
   font-size: 6vw;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .introImage {
     max-width: 400%;
     max-height: 400%;
@@ -144,7 +144,7 @@
   border-color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .questionsContainer {
     flex-direction: column;
     align-items: center;

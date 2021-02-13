@@ -34,7 +34,7 @@
   font-size: 6vw;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .introImage {
     max-width: 400%;
     max-height: 400%;
@@ -74,7 +74,7 @@
   font-size: 2em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .funFactsContainer1 {
     flex-direction: column;
   }
@@ -139,7 +139,7 @@
   max-height: 180%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .picturesContainer {
     grid-template-areas: 'picture1 picture2'
                          'picture3 picture4'
@@ -199,7 +199,7 @@
   order: 2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .funFactContainer {
     flex-direction: column;
   }
