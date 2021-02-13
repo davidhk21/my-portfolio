@@ -34,10 +34,10 @@
   font-size: 6vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
   .introImage {
-    max-width: 300%;
-    max-height: 300%;
+    max-width: 400%;
+    max-height: 400%;
   }
 }
 
@@ -142,4 +142,17 @@
   background-color: black;
   color: #e1a87a;
   border-color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .questionsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .questionContainer {
+    margin: 20px 0;
+  }
+  .formContainer {
+    width: 80vw;
+  }
 }
