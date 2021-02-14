@@ -6,7 +6,7 @@ export default function PortfolioIntro() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src="/portfolio-background.JPG"
+        src="/portfolio-background.jpg"
         alt="Picture of the author"
         className={styles.introImage}
         fluid
