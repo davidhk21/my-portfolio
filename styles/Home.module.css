@@ -154,9 +154,11 @@
     flex-direction: column;
     margin: 0;
     width: 80vw;
+    align-items: center;
   }
   .aboutMeTitle {
     font-size: 3em;
+    width: 80vw;
   }
   .aboutMeDescContainer {
     margin: 10px 0;
