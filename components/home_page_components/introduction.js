@@ -6,7 +6,7 @@ export default function Introduction() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src="/prof_pic.jpg"
+        src="/prof_pic.JPG"
         alt="Picture of the author"
         className={styles.introImage}
       />
