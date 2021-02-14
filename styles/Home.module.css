@@ -276,3 +276,8 @@
     width: 150%;
   }
 }
+@media screen and (max-width: 560px) {
+  .contactBackgroundImage {
+    width: 250%;
+  }
+}
