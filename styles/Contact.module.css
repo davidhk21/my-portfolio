@@ -80,9 +80,8 @@
 }
 
 .formError {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  text-align: center;
+  margin: 10px 0;
   font-size: .8em;
   color: red;
 }
@@ -154,5 +153,6 @@
   }
   .formContainer {
     width: 80vw;
+    padding: 25px;
   }
 }
