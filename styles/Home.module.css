@@ -182,9 +182,7 @@
 }
 
 .cardContainer {
-  display: inline-flex;
-  resize: vertical;
-  overflow: auto;
+  display: flex;
 }
 
 .card {
