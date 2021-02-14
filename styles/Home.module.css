@@ -6,7 +6,7 @@
   width: 100%;
   height: 100vh;
   max-height: 1200px;
-  min-height: 1000px;
+  /* min-height: 1000px; */
   overflow: hidden;
   position: relative;
 }
@@ -38,7 +38,7 @@
   font-size: 3vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 560px) {
   .introImage {
     max-width: 300%;
     max-height: 300%;
@@ -82,9 +82,15 @@
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 560px) {
   .passionContainer1 {
     flex-direction: column;
+  }
+  .selfPortraitContainer {
+    width: 50vw;
+  }
+  .passionInfoContainer {
+    width: 80vw;
   }
 }
 /********** AboutMe **********/
@@ -110,19 +116,13 @@
   margin: 0 100px;
   display: flex;
 }
-@media screen and (max-width: 1000px) {
-  .aboutMeInfoContainer {
-    flex-direction: column;
-  }
-}
 
 .aboutMeDescContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
-  max-width: 500px;
-  width: 300px;
+  margin: 20px;
+  max-width: 360px;
   text-align: center;
 }
 
@@ -149,6 +149,23 @@
   color: black;
 }
 
+@media screen and (max-width: 560px) {
+  .aboutMeInfoContainer {
+    flex-direction: column;
+    margin: 0;
+    width: 80vw;
+    align-items: center;
+  }
+  .aboutMeTitle {
+    font-size: 3em;
+    width: 80vw;
+  }
+  .aboutMeDescContainer {
+    margin: 10px 0;
+
+  }
+}
+
 /********** Projects **********/
 
 .projectsContainer {
@@ -165,12 +182,9 @@
 }
 
 .cardContainer {
-  display: flex;
-}
-@media screen and (max-width: 1000px) {
-  .cardContainer {
-    flex-direction: column;
-  }
+  display: inline-flex;
+  resize: vertical;
+  overflow: auto;
 }
 
 .card {
@@ -200,6 +214,12 @@
   border-color: black;
 }
 
+@media screen and (max-width: 900px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+}
+
 /********** Contact **********/
 
 .contactContainer {
@@ -221,11 +241,6 @@
   bottom: 0;
   margin: auto;
   opacity: 0.4;
-}
-@media screen and (max-width: 750px) {
-  .contactBackgroundImage {
-    width: 150%;
-  }
 }
 
 .contactTextContainer {
@@ -256,4 +271,15 @@
   text-decoration: none;
   background-color: #e1a87a;
   color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .contactBackgroundImage {
+    width: 150%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .contactBackgroundImage {
+    width: 250%;
+  }
 }

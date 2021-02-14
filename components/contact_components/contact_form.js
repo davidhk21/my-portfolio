@@ -53,9 +53,9 @@ export default function ContactForm() {
           Need help with anything or have any questions?
         </div>
       </div>
+      {fieldsError ? <div className={styles.formError}>Your form has encountered a problem. Please make sure all the fields are filled and that the email entered is valid.</div> : null}
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
-          {fieldsError ? <div className={styles.formError}>Your form has encountered a problem. Please make sure all the fields are filled and that the email entered is valid.</div> : null}
           <div className={styles.formMiniContainer}>
             <div className={styles.firstLastFields}>
               <label htmlFor="first-name" className={styles.nameInputsContainer}>
