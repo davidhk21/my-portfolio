@@ -21,6 +21,12 @@
   margin: auto;
   max-width: 200%;
   max-height: 200%;
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: .4; }
 }
 
 .imageTextContainer {
