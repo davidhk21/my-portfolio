@@ -14,7 +14,7 @@ export default function MoreFacts() {
           </div>
           <div className={styles.circleImageContainer}>
             <Image
-              src="/volleyball.jpg"
+              src="/volleyball.JPG"
               alt="Picture of the author"
               className={styles.circleImage}
             />
@@ -29,7 +29,7 @@ export default function MoreFacts() {
           </div>
           <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
             <Image
-              src="/food.jpg"
+              src="/food.JPG"
               alt="Picture of the author"
               className={styles.circleImage}
             />
@@ -44,7 +44,7 @@ export default function MoreFacts() {
           </div>
           <div className={styles.circleImageContainer}>
             <Image
-              src="/travel.jpg"
+              src="/travel.JPG"
               alt="Picture of the author"
               className={styles.circleImage}
             />

@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div className={styles.contactContainer}>
       <Image
-        src="/computer_background.JPG"
+        src="/computer_background.jpg"
         alt="Picture of someone working on a computer"
         className={styles.contactBackgroundImage}
       />
