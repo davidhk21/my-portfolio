@@ -6,9 +6,14 @@ export default function Pictures() {
   return (
     <div className={styles.picturesContainer}>
       <div className={`${styles.picture1Container} ${styles.pictureContainer}`}>
-        <Image
+        {/* <Image
           src="/1.jpg"
           alt="Picture of the author"
+          className={styles.picture}
+        /> */}
+        <img
+          src="/1.jpg"
+          alt="author"
           className={styles.picture}
         />
       </div>
