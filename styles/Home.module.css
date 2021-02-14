@@ -152,9 +152,15 @@
 @media screen and (max-width: 560px) {
   .aboutMeInfoContainer {
     flex-direction: column;
+    margin: 0;
+    width: 80vw;
   }
   .aboutMeTitle {
     font-size: 3em;
+  }
+  .aboutMeDescContainer {
+    margin: 10px 0;
+
   }
 }
 
