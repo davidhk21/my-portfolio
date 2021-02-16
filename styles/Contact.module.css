@@ -163,3 +163,52 @@
     padding: 25px;
   }
 }
+
+/********** Confirmation **********/
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal {
+  background: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalText {
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.closeButton {
+  border: 1px solid #e1a87a;
+  color: black;
+  background: white;
+  padding: 15px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: .5px;
+  line-height: 2em;
+  color: gray;
+}
+.closeButton:hover {
+  text-decoration: none;
+  background-color: black;
+  color: #e1a87a;
+  border-color: black;
+}

@@ -3,7 +3,7 @@ import validator from 'validator';
 import sendContactMail from '../../utils/mail_api';
 import styles from '../../styles/Contact.module.css';
 
-export default function ContactForm() {
+export default function ContactForm({ setModal }) {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -30,6 +30,8 @@ export default function ContactForm() {
     e.preventDefault();
     if (firstName && lastName && validator.isEmail(email) && formContent) {
       setFieldsError(false);
+      setModal(true);
+      document.body.classList.add('modal-open');
       sendContactMail(firstName, lastName, email, formContent);
       setFirstName('');
       setLastName('');
