@@ -39,3 +39,7 @@ ul {
 li {
   font-size: 1.1em;
 }
+
+.modal-open {
+  overflow: hidden;
+}

@@ -146,13 +146,14 @@
   max-height: 180%;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
   .picturesContainer {
     grid-template-areas: 'picture1 picture2'
                          'picture3 picture4'
                          'picture5 picture6';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    max-width: 1000px;
   }
 }
 
@@ -196,6 +197,10 @@
   margin: auto;
   max-width: 150%;
   max-height: 150%;
+}
+
+.travel {
+  right: -9970px;
 }
 
 .imageLeft {
