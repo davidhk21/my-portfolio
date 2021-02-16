@@ -15,6 +15,7 @@ export default function ContactMe() {
   const keyPress = useCallback((e) => {
     if (e.key === 'Escape' && modal) {
       setModal(false);
+      document.body.classList.remove('modal-open');
     }
   }, [modal, setModal]);
 
