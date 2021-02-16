@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import dynamic from 'next/dynamic';
 
@@ -11,6 +11,17 @@ const Confirmation = dynamic(() => import('../components/contact_components/conf
 
 export default function ContactMe() {
   const [modal, setModal] = useState(false);
+
+  const keyPress = useCallback((e) => {
+    if (e.key === 'Escape' && modal) {
+      setModal(false);
+    }
+  }, [modal, setModal]);
+
+  useEffect(() => {
+    document.addEventListener('keydown', keyPress);
+    return () => document.removeEventListener('keydown', keyPress);
+  }, [keyPress]);
 
   return (
     <div>
