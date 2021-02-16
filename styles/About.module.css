@@ -199,6 +199,10 @@
   max-height: 150%;
 }
 
+.travel {
+  right: -9970px;
+}
+
 .imageLeft {
   order: 1;
 }

@@ -46,7 +46,7 @@ export default function MoreFacts() {
             <Image
               src="/travel.JPG"
               alt="Picture of the author"
-              className={styles.circleImage}
+              className={`${styles.circleImage} ${styles.travel}`}
             />
           </div>
         </div>
