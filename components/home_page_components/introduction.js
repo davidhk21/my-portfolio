@@ -13,6 +13,7 @@ export default function Introduction() {
         layout="fill"
         objectFit="cover"
         priority
+        quality={100}
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>Hi! I&apos;m David Kim,</h1>
