@@ -14,7 +14,7 @@ export default function PortfolioIntro() {
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>What I&apos;ve Accomplished</h1>
-        <a href="/resume.pdf" download="David Kim Resume" className={styles.resumeDownload}>DOWNLOAD RESUME</a>
+        <a href={`${imageUrl}/resume.pdf`} download="David Kim Resume" className={styles.resumeDownload}>DOWNLOAD RESUME</a>
       </div>
     </div>
   );
