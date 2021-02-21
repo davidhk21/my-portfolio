@@ -10,7 +10,7 @@ export default function AboutIntro() {
         src={`${imageUrl}/about-background.jpg`}
         alt="Picture of the author"
         className={styles.introImage}
-        fluid
+        priority
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>My Passions & Personality</h1>

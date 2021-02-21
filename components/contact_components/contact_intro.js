@@ -10,7 +10,7 @@ export default function ContactIntro() {
         src={`${imageUrl}/contact-background.jpg`}
         alt="Picture of the author"
         className={styles.introImage}
-        fluid
+        priority
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>Let&apos;s Connect</h1>

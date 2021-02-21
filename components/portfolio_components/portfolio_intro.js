@@ -10,7 +10,7 @@ export default function PortfolioIntro() {
         src={`${imageUrl}/portfolio-background.JPG`}
         alt="Picture of the author"
         className={styles.introImage}
-        fluid
+        priority
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>What I&apos;ve Accomplished</h1>
