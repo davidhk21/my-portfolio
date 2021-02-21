@@ -13,7 +13,6 @@ export default function ContactIntro() {
         layout="fill"
         objectFit="cover"
         priority
-        quality={100}
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>Let&apos;s Connect</h1>

@@ -13,7 +13,6 @@ export default function PortfolioIntro() {
         layout="fill"
         objectFit="cover"
         priority
-        quality={100}
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>What I&apos;ve Accomplished</h1>

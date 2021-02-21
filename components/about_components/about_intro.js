@@ -13,7 +13,6 @@ export default function AboutIntro() {
         layout="fill"
         objectFit="cover"
         priority
-        quality={100}
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>My Passions & Personality</h1>
