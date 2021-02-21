@@ -2,6 +2,7 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/Home.module.css';
+import { imageUrl } from '../../pages/_app';
 
 export default function Passion() {
   return (
@@ -9,7 +10,7 @@ export default function Passion() {
       <Fade distance="100px" delay={500} left>
         <div className={styles.selfPortraitContainer}>
           <Image
-            src="/Me.png"
+            src={`${imageUrl}/me.png`}
             alt="Picture of the author"
             className={styles.selfPortrait}
           />

@@ -15,6 +15,8 @@ const NavBar = dynamic(() => import('../components/navbar'), { ssr: false });
 
 library.add(fab, far, fas);
 
+const imageUrl = 'http://d82ay42odmokt.cloudfront.net';
+
 function MyApp({ Component, pageProps }) {
   return (
     <div>
@@ -29,4 +31,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export { MyApp as default, imageUrl };
