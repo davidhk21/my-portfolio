@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
+import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/About.module.css';
 import { imageUrl } from '../../pages/_app';
@@ -17,7 +17,8 @@ export default function MoreFacts() {
             <Image
               src={`${imageUrl}/volleyball.JPG`}
               alt="Picture of the author"
-              className={styles.circleImage}
+              layout="fill"
+              objectFit="cover"
             />
           </div>
         </div>
@@ -32,7 +33,8 @@ export default function MoreFacts() {
             <Image
               src={`${imageUrl}/food.JPG`}
               alt="Picture of the author"
-              className={styles.circleImage}
+              layout="fill"
+              objectFit="cover"
             />
           </div>
         </div>
@@ -47,7 +49,8 @@ export default function MoreFacts() {
             <Image
               src={`${imageUrl}/travel.JPG`}
               alt="Picture of the author"
-              className={`${styles.circleImage} ${styles.travel}`}
+              layout="fill"
+              objectFit="cover"
             />
           </div>
         </div>
@@ -62,7 +65,8 @@ export default function MoreFacts() {
             <Image
               src={`${imageUrl}/read-write.jpg`}
               alt="Picture of the author"
-              className={styles.circleImage}
+              layout="fill"
+              objectFit="cover"
             />
           </div>
         </div>
