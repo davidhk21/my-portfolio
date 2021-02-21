@@ -117,6 +117,17 @@
   grid-area: 'picture6';
 }
 
+.picture {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  max-width: 180%;
+  max-height: 180%;
+}
+
 @media screen and (max-width: 800px) {
   .picturesContainer {
     grid-template-areas: 'picture1 picture2'
@@ -124,6 +135,7 @@
                          'picture5 picture6';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    max-width: 1000px;
   }
 }
 
@@ -156,6 +168,21 @@
   overflow: hidden;
   margin: 0 25px;
   position: relative;
+}
+
+.circleImage {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  max-width: 150%;
+  max-height: 150%;
+}
+
+.travel {
+  right: -9970px;
 }
 
 .imageLeft {
