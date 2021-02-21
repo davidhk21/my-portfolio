@@ -13,6 +13,7 @@ export default function Contact() {
         className={styles.contactBackgroundImage}
         layout="fill"
         objectFit="cover"
+        priority
       />
       <div className={styles.contactTextContainer}>
         <h3 className={styles.contactTitle}>Web Developer</h3>

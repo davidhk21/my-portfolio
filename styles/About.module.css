@@ -158,6 +158,21 @@
   position: relative;
 }
 
+.circleImage {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  max-width: 150%;
+  max-height: 150%;
+}
+
+.travel {
+  right: -9970px;
+}
+
 .imageLeft {
   order: 1;
 }

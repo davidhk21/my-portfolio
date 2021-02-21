@@ -10,7 +10,6 @@ export default function Pictures() {
         <Image
           src={`${imageUrl}/1.JPG`}
           alt="Picture of the author"
-          className={styles.picture}
           layout="fill"
           objectFit="cover"
           priority
@@ -20,7 +19,6 @@ export default function Pictures() {
         <Image
           src={`${imageUrl}/2.JPG`}
           alt="Picture of the author"
-          className={styles.picture}
           layout="fill"
           objectFit="cover"
           priority
@@ -30,7 +28,6 @@ export default function Pictures() {
         <Image
           src={`${imageUrl}/3.JPG`}
           alt="Picture of the author"
-          className={styles.picture}
           layout="fill"
           objectFit="cover"
           priority
@@ -40,7 +37,6 @@ export default function Pictures() {
         <Image
           src={`${imageUrl}/4.JPG`}
           alt="Picture of the author"
-          className={styles.picture}
           layout="fill"
           objectFit="cover"
           priority
@@ -50,7 +46,6 @@ export default function Pictures() {
         <Image
           src={`${imageUrl}/5.JPG`}
           alt="Picture of the author"
-          className={styles.picture}
           layout="fill"
           objectFit="cover"
           priority
@@ -60,7 +55,6 @@ export default function Pictures() {
         <Image
           src={`${imageUrl}/6.jpg`}
           alt="Picture of the author"
-          className={styles.picture}
           layout="fill"
           objectFit="cover"
           priority
