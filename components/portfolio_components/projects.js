@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/Portfolio.module.css';
+import { imageUrl } from '../../pages/_app';
 
 export default function Projects() {
   return (
@@ -11,7 +12,7 @@ export default function Projects() {
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
-              <img src="PhotoGallery.png" alt="Homents" className={styles.image} />
+              <img src={`${imageUrl}/photo-gallery.png`} alt="Homents" className={styles.image} />
             </div>
             <div className={styles.link}>
               <a href="https://github.com/davidhk21/Photos" target="_blank" rel="noopener noreferrer" className={styles.github}>
@@ -30,7 +31,7 @@ export default function Projects() {
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
-              <img src="system-design.jpg" alt="NearMiss" className={styles.image} />
+              <img src={`${imageUrl}/system-design.jpg`} alt="NearMiss" className={styles.image} />
             </div>
             <div className={styles.link}>
               <a href="https://github.com/davidhk21/about-this-item" target="_blank" rel="noopener noreferrer" className={styles.github}>
@@ -49,7 +50,7 @@ export default function Projects() {
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
-              <img src="pluck-logo.png" alt="Pluck" className={styles.image} />
+              <img src={`${imageUrl}/pluck-logo.png`} alt="Pluck" className={styles.image} />
             </div>
             <div className={styles.link}>
               <a href="https://github.com/davidhk21/Pluck" target="_blank" rel="noopener noreferrer" className={styles.github}>
