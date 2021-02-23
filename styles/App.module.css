@@ -57,12 +57,21 @@
   font-size: 3.2em;
 }
 
+.linksContainer {
+  display: flex;
+  width: 80%;
+  max-width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .links {
   color: white;
   margin: 50px 0;
 }
 .links:hover {
   color: #e1a87a;
+  text-decoration: none;
 }
 
 .copyright {
@@ -99,4 +108,10 @@
 
 .smallerIcon {
   font-size: 20px;
+}
+
+@media screen and (max-width: 560px) {
+  .linksContainer {
+    flex-direction: column;
+  }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../styles/App.module.css';
 
@@ -8,20 +7,20 @@ export default function Footer() {
   return (
     <div className={styles.footerContainer}>
       <h1 className={styles.footerTitle}>Let&apos;s Connect!</h1>
-      <Nav>
+      <div className={styles.linksContainer}>
         <Link href="/" passHref>
-          <Nav.Link className={styles.links}>HOME</Nav.Link>
+          <a className={styles.links}>HOME</a>
         </Link>
         <Link href="/portfolio" passHref>
-          <Nav.Link className={styles.links}>PORTFOLIO</Nav.Link>
+          <a className={styles.links}>PORTFOLIO</a>
         </Link>
         <Link href="/about" passHref>
-          <Nav.Link className={styles.links}>ABOUT</Nav.Link>
+          <a className={styles.links}>ABOUT</a>
         </Link>
         <Link href="/contact_me" passHref>
-          <Nav.Link className={styles.links}>CONTACT</Nav.Link>
+          <a className={styles.links}>CONTACT</a>
         </Link>
-      </Nav>
+      </div>
       <p className={styles.copyright}>&copy; 2021 David Kim. All rights reserved.</p>
       <div className={styles.iconsContainer}>
         <a href="https://www.instagram.com/davidhk21/" target="_blank" rel="noopener noreferrer" className={`${styles.iconContainer} ${styles.shrink}`}>
