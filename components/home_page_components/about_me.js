@@ -18,7 +18,7 @@ export default function AboutMe() {
         </div>
         <div className={styles.aboutMeDescContainer}>
           <FontAwesomeIcon icon={['fas', 'brain']} className={styles.iconBody} />
-          <p className={styles.aboutMeDescText}>Though I&apos;m confident in my knowledge, skills, and abilities, I recognize that I will always be a work in progress.</p>
+          <p className={styles.aboutMeDescText}>Though I&apos;m confident in my knowledge, skills, and abilities, I recognize there&apos;s always more to learn.</p>
         </div>
       </div>
       <Link href="/about">
