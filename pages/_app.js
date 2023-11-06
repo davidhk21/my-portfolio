@@ -3,13 +3,16 @@ import '../styles/globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import dynamic from 'next/dynamic';
 import Footer from '../components/footer';
+
+config.autoAddCss = false;
 
 const NavBar = dynamic(() => import('../components/navbar'), { ssr: false });
 

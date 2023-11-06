@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
+import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/About.module.css';
 import { imageUrl } from '../../pages/_app';

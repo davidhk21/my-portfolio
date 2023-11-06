@@ -40,8 +40,8 @@ export default function Projects() {
           </Card>
         </div>
       </Fade>
-      <Link href="/portfolio">
-        <a className={styles.buttonSeeProjects}>SEE PROJECTS</a>
+      <Link href="/portfolio" className={styles.buttonSeeProjects}>
+        SEE PROJECTS
       </Link>
     </div>
   );

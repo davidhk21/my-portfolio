@@ -8,17 +8,17 @@ export default function Footer() {
     <div className={styles.footerContainer}>
       <h1 className={styles.footerTitle}>Let&apos;s Connect!</h1>
       <div className={styles.linksContainer}>
-        <Link href="/" passHref>
-          <a className={styles.links}>HOME</a>
+        <Link href="/" passHref className={styles.links}>
+          HOME
         </Link>
-        <Link href="/portfolio" passHref>
-          <a className={styles.links}>PORTFOLIO</a>
+        <Link href="/portfolio" passHref className={styles.links}>
+          PORTFOLIO
         </Link>
-        <Link href="/about" passHref>
-          <a className={styles.links}>ABOUT</a>
+        <Link href="/about" passHref className={styles.links}>
+          ABOUT
         </Link>
-        <Link href="/contact_me" passHref>
-          <a className={styles.links}>CONTACT</a>
+        <Link href="/contact_me" passHref className={styles.links}>
+          CONTACT
         </Link>
       </div>
       <p className={styles.copyright}>&copy; 2021 David Kim. All rights reserved.</p>
