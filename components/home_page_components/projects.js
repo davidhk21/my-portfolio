@@ -1,9 +1,12 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
-import { imageUrl } from '../../pages/_app';
+import photoGalleryPhoto from '../../assets/homents.JPG';
+import nearMissPhoto from '../../assets/nearmiss.jpeg';
+import pluckPhoto from '../../assets/pluck-logo.png';
 
 export default function Projects() {
   return (
@@ -12,7 +15,11 @@ export default function Projects() {
       <Fade distance="100px" delay={500} bottom cascade>
         <div className={styles.cardContainer}>
           <Card className={styles.card}>
-            <Card.Img variant="top" src={`${imageUrl}/photo-gallery.png`} className={styles.cardImage} />
+            <Image
+              src={photoGalleryPhoto}
+              alt="Homents"
+              className={styles.cardImage}
+            />
             <Card.Body>
               <Card.Title>Homents</Card.Title>
               <Card.Text>
@@ -21,7 +28,11 @@ export default function Projects() {
             </Card.Body>
           </Card>
           <Card className={styles.card}>
-            <Card.Img variant="top" src={`${imageUrl}/system-design.jpg`} className={styles.cardImage} />
+            <Image
+              src={nearMissPhoto}
+              alt="NearMiss"
+              className={styles.cardImage}
+            />
             <Card.Body>
               <Card.Title>NearMiss</Card.Title>
               <Card.Text>
@@ -30,7 +41,11 @@ export default function Projects() {
             </Card.Body>
           </Card>
           <Card className={styles.card}>
-            <Card.Img variant="top" src={`${imageUrl}/pluck-logo.png`} className={`${styles.cardImage} ${styles.pluckImage}`} />
+            <Image
+              src={pluckPhoto}
+              alt="Pluck"
+              className={styles.cardImage}
+            />
             <Card.Body>
               <Card.Title>Pluck</Card.Title>
               <Card.Text>
