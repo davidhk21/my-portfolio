@@ -14,15 +14,16 @@ export default function Skills() {
           <div>
             <p>FRONT-END</p>
             <ul>
-              <li>JavaScript (ES5, ES6+)</li>
+              <li>JavaScript/TypeScript</li>
               <li>React.js</li>
-              <li>React-Native</li>
+              <li>Redux</li>
+              <li>CSS</li>
+              <li>HTML</li>
               <li>Babel</li>
               <li>Webpack</li>
               <li>jQuery</li>
-              <li>CSS3</li>
-              <li>HTML5</li>
               <li>Victory.js</li>
+              <li>React-Native</li>
             </ul>
           </div>
           <div>
@@ -30,6 +31,7 @@ export default function Skills() {
             <ul>
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>Java</li>
               <li>MongoDB</li>
               <li>MySQL</li>
               <li>PostgreSQL</li>
@@ -42,7 +44,8 @@ export default function Skills() {
           <div>
             <p>DEV TOOLS & TECHNIQUES</p>
             <ul>
-              <li>AWS EC2/S3</li>
+              <li>AWS (Lambda, DynamoDB, API Gateway, etc.)</li>
+              <li>Terraform</li>
               <li>Jest</li>
               <li>Chai</li>
               <li>Mocha</li>

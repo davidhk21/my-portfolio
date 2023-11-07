@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
-import { imageUrl } from '../../pages/_app';
+import selfPortrait from '../../assets/self-portrait.jpeg';
 
 export default function Introduction() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src={`${imageUrl}/prof-pic.JPG`}
+        src={selfPortrait}
         alt="Picture of the David Kim"
         className={styles.introImage}
         layout="fill"
@@ -15,8 +15,8 @@ export default function Introduction() {
         priority
       />
       <div className={styles.imageTextContainer}>
-        <h1 className={styles.imageTitle}>Hi! I&apos;m David Kim,</h1>
-        <h3 className={styles.imageText}>a Software Engineer</h3>
+        <h1 className={styles.imageTitle}>Hi! I&apos;m David Kim.</h1>
+        <h3 className={styles.imageText}>(pretty unique, right?)</h3>
       </div>
     </div>
   );

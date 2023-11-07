@@ -14,7 +14,7 @@ export default function AboutMe() {
         </div>
         <div className={styles.aboutMeDescContainer}>
           <FontAwesomeIcon icon={['fas', 'heart']} className={styles.iconBody} />
-          <p className={styles.aboutMeDescText}>I believe that a person&apos;s opinion of the world is also a confession of character.</p>
+          <p className={styles.aboutMeDescText}>I believe that a person&apos;s opinion of the world is also a confession of character. </p>
         </div>
         <div className={styles.aboutMeDescContainer}>
           <FontAwesomeIcon icon={['fas', 'brain']} className={styles.iconBody} />

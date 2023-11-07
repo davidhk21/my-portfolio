@@ -19,7 +19,7 @@ export default function Passion() {
       <Fade distance="100px" delay={500} right>
         <div className={styles.passionInfoContainer}>
           <h1 className={styles.passionTitle}>My passion and focus is people and self-development</h1>
-          <p className={styles.passionDesc}>I push myself out of my comfort zone by doing things like living in Shanghai, China and organizing a TEDx event, and I have cultivated a strong growth mindset. These traits have propelled me as a software engineer because I&apos;m driven towards continuous improvement when it comes to design, functionality, and growth. With an emphasis on user experience and modern design, I thrive on building applications that have a positive impact on the end user.</p>
+          <p className={styles.passionDesc}>I enjoy pushing myself out of my comfort zone, whether its by doing things like living in Shanghai, China for a year or organizing a TEDx event, and as a result I have cultivated a strong growth mindset. These traits have propelled me as a software engineer because I&apos;m driven towards continuous improvement when it comes to design, functionality, and growth. With an emphasis on user experience and modern design, I thrive on building applications that have a positive impact on the end user.</p>
         </div>
       </Fade>
     </div>

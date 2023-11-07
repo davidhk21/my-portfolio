@@ -1,8 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Fade from 'react-reveal/Fade';
+import Image from 'next/image';
 import styles from '../../styles/Portfolio.module.css';
-import { imageUrl } from '../../pages/_app';
+import photoGalleryPhoto from '../../assets/homents.JPG';
+import nearMissPhoto from '../../assets/nearmiss.jpeg';
+import pluckPhoto from '../../assets/pluck-logo.png';
 
 export default function Projects() {
   return (
@@ -12,12 +15,16 @@ export default function Projects() {
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
-              <img src={`${imageUrl}/photo-gallery.png`} alt="Homents" className={styles.image} />
+              <Image
+                src={photoGalleryPhoto}
+                alt="Homents"
+                className={styles.image}
+              />
             </div>
             <div className={styles.link}>
               <a href="https://github.com/davidhk21/Photos" target="_blank" rel="noopener noreferrer" className={styles.github}>
                 <FontAwesomeIcon icon={['fab', 'github']} />
-                {' Github Link'}
+                {' Github Repo'}
               </a>
             </div>
           </div>
@@ -31,12 +38,16 @@ export default function Projects() {
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
-              <img src={`${imageUrl}/system-design.jpg`} alt="NearMiss" className={styles.image} />
+              <Image
+                src={nearMissPhoto}
+                alt="NearMiss"
+                className={styles.image}
+              />
             </div>
             <div className={styles.link}>
               <a href="https://github.com/davidhk21/about-this-item" target="_blank" rel="noopener noreferrer" className={styles.github}>
                 <FontAwesomeIcon icon={['fab', 'github']} />
-                {' Github Link'}
+                {' Github Repo'}
               </a>
             </div>
           </div>
@@ -50,12 +61,16 @@ export default function Projects() {
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
-              <img src={`${imageUrl}/pluck-logo.png`} alt="Pluck" className={styles.image} />
+              <Image
+                src={pluckPhoto}
+                alt="Pluck"
+                className={styles.image}
+              />
             </div>
             <div className={styles.link}>
               <a href="https://github.com/davidhk21/Pluck" target="_blank" rel="noopener noreferrer" className={styles.github}>
                 <FontAwesomeIcon icon={['fab', 'github']} />
-                {' Github Link'}
+                {' Github Repo'}
               </a>
             </div>
           </div>
