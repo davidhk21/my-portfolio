@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/About.module.css';
-import { imageUrl } from '../../pages/_app';
+import photo from '../../assets/self-portrait.jpeg';
 
 export default function Pictures() {
   return (
     <div className={styles.picturesContainer}>
       <div className={`${styles.picture1Container} ${styles.pictureContainer}`}>
         <Image
-          src={`${imageUrl}/1.JPG`}
+          src={photo}
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"
@@ -17,7 +17,7 @@ export default function Pictures() {
       </div>
       <div className={`${styles.picture2Container} ${styles.pictureContainer}`}>
         <Image
-          src={`${imageUrl}/2.JPG`}
+          src={photo}
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"
@@ -26,7 +26,7 @@ export default function Pictures() {
       </div>
       <div className={`${styles.picture3Container} ${styles.pictureContainer}`}>
         <Image
-          src={`${imageUrl}/3.JPG`}
+          src={photo}
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"
@@ -35,7 +35,7 @@ export default function Pictures() {
       </div>
       <div className={`${styles.picture4Container} ${styles.pictureContainer}`}>
         <Image
-          src={`${imageUrl}/4.JPG`}
+          src={photo}
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"
@@ -44,7 +44,7 @@ export default function Pictures() {
       </div>
       <div className={`${styles.picture5Container} ${styles.pictureContainer}`}>
         <Image
-          src={`${imageUrl}/5.JPG`}
+          src={photo}
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"
@@ -53,7 +53,7 @@ export default function Pictures() {
       </div>
       <div className={`${styles.picture6Container} ${styles.pictureContainer}`}>
         <Image
-          src={`${imageUrl}/6.jpg`}
+          src={photo}
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"

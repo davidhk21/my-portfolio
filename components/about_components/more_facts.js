@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/About.module.css';
-import { imageUrl } from '../../pages/_app';
+import photo from '../../assets/self-portrait.jpeg';
 
 export default function MoreFacts() {
   return (
@@ -15,7 +15,7 @@ export default function MoreFacts() {
           </div>
           <div className={styles.circleImageContainer}>
             <Image
-              src={`${imageUrl}/volleyball.JPG`}
+              src={photo}
               alt="Picture of the author"
               className={styles.circleImage}
             />
@@ -30,7 +30,7 @@ export default function MoreFacts() {
           </div>
           <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
             <Image
-              src={`${imageUrl}/food.JPG`}
+              src={photo}
               alt="Picture of the author"
               className={styles.circleImage}
             />
@@ -45,7 +45,7 @@ export default function MoreFacts() {
           </div>
           <div className={styles.circleImageContainer}>
             <Image
-              src={`${imageUrl}/travel.JPG`}
+              src={photo}
               alt="Picture of the author"
               className={`${styles.circleImage} ${styles.travel}`}
             />
@@ -60,7 +60,7 @@ export default function MoreFacts() {
           </div>
           <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
             <Image
-              src={`${imageUrl}/read-write.jpg`}
+              src={photo}
               alt="Picture of the author"
               className={styles.circleImage}
             />

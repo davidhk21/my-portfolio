@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/About.module.css';
-import { imageUrl } from '../../pages/_app';
+import photo from '../../assets/self-portrait.jpeg';
 
 export default function FunFacts() {
   return (
@@ -10,7 +10,7 @@ export default function FunFacts() {
       <Fade distance="100px" delay={500} left>
         <div className={styles.selfPortraitContainer}>
           <Image
-            src={`${imageUrl}/me.png`}
+            src={photo}
             alt="Picture of the author"
             className={styles.selfPortrait}
           />

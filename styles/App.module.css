@@ -68,6 +68,7 @@
 .links {
   color: white;
   margin: 50px 0;
+  text-decoration: none;
 }
 .links:hover {
   color: #e1a87a;

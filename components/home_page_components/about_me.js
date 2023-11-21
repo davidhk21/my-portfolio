@@ -21,8 +21,10 @@ export default function AboutMe() {
           <p className={styles.aboutMeDescText}>Though I&apos;m confident in my knowledge, skills, and abilities, I recognize there&apos;s always more to learn.</p>
         </div>
       </div>
-      <Link href="/about" className={styles.buttonLearnMore}>
-        LEARN MORE
+      <Link href="/about">
+        <a className={styles.buttonLearnMore}>
+          LEARN MORE
+        </a>
       </Link>
     </div>
   );
