@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Contact.module.css';
-import { imageUrl } from '../../pages/_app';
+import imageLoader from '../../utils/imageLoader';
 
 export default function ContactIntro() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src={`${imageUrl}/contact-background.jpg`}
+        src="sf_coverphoto.jpeg"
+        loader={imageLoader}
         alt="Picture of the author"
         className={styles.introImage}
         layout="fill"

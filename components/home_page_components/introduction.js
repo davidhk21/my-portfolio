@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
-import selfPortrait from '../../assets/self-portrait.jpeg';
+import imageLoader from '../../utils/imageLoader';
 
 export default function Introduction() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src={selfPortrait}
+        loader={imageLoader}
+        src="pepperdine_selfportrait.jpeg"
         alt="Picture of the David Kim"
         className={styles.introImage}
         layout="fill"

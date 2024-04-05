@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/About.module.css';
-import photo from '../../assets/self-portrait.jpeg';
+import imageLoader from '../../utils/imageLoader';
 
 export default function MoreFacts() {
   return (
@@ -11,13 +11,14 @@ export default function MoreFacts() {
         <div className={styles.funFactContainer}>
           <div className={styles.description}>
             <h4>Sports</h4>
-            <p>My favorite sports are Volleyball and Basketball and one of my favorite things to do is gathering a group of friends to play either sport. One of my lifetime goals is to coach volleyball for a high school or club team. My favorite NBA player is Steph Curry (yes, the greatest shooter of all time) because I look up to him both on and off the court.</p>
+            <p>My favorite sport is Volleyball and one of my favorite things to do is gathering a group of friends to play the sport. One of my lifetime goals is to coach volleyball for a high school or club team. My favorite NBA player is Steph Curry (yes, the greatest shooter of all time) because I look up to him both on and off the court.</p>
           </div>
           <div className={styles.circleImageContainer}>
             <Image
-              src={photo}
+              src="volleyball_intramurals.JPG"
+              loader={imageLoader}
               alt="Picture of the author"
-              className={styles.circleImage}
+              layout="fill"
             />
           </div>
         </div>
@@ -30,9 +31,10 @@ export default function MoreFacts() {
           </div>
           <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
             <Image
-              src={photo}
+              src="dumpings.jpg"
+              loader={imageLoader}
               alt="Picture of the author"
-              className={styles.circleImage}
+              layout="fill"
             />
           </div>
         </div>
@@ -41,13 +43,14 @@ export default function MoreFacts() {
         <div className={styles.funFactContainer}>
           <div className={styles.description}>
             <h4>Travel</h4>
-            <p>Not to be one of those people who say &quot;studying abroad changed my life&quot;, but I actually did not have any urge to travel around the world until I studied abroad in Shanghai, China. With this newfound love for traveling, I&apos;ve journeyed to places like Hong Kong, Tibet, Japan, Indonesia, Thailand, England, the Netherlands, and France. It is a lifelong goal to expand upon this list!</p>
+            <p>Not to be one of those people who say &quot;studying abroad changed my life&quot;, but it wasn&apos;t until I studied abroad in Shanghai, China did I have any urge to travel around the world. With this newfound love for traveling, I&apos;ve journeyed to places like Hong Kong, Tibet, Japan, Indonesia, Thailand, England, the Netherlands, and France. It is a lifelong goal to expand upon this list!</p>
           </div>
           <div className={styles.circleImageContainer}>
             <Image
-              src={photo}
+              src="korea_selfportrait.jpg"
+              loader={imageLoader}
               alt="Picture of the author"
-              className={`${styles.circleImage} ${styles.travel}`}
+              layout="fill"
             />
           </div>
         </div>
@@ -56,13 +59,18 @@ export default function MoreFacts() {
         <div className={styles.funFactContainer}>
           <div className={`${styles.description} ${styles.descriptionRight}`}>
             <h4>Reading/Writing</h4>
-            <p>I&apos;m a big advocate for using physical planners, as I&apos;ve been using them on a daily basis ever since the beginning of high school. For the past couple of years, I&apos;ve also made the effort to journal everyday (definitely missed some days but it&apos;s okay!) to make sure I reflect and take life day by day.</p>
+            <p>
+              I try to maintain the goal of becoming 1% better everyday, and a great way of doing so is through reading and writing.
+              I don&apos;t consider myself a reader (yet), but I do enjoy reading in my spare time.
+              I&apos;ve also made it a habit to journal everyday, as it is important to reflect and take life day by day.
+            </p>
           </div>
           <div className={`${styles.circleImageContainer} ${styles.imageLeft}`}>
             <Image
-              src={photo}
+              src="journal.jpeg"
+              loader={imageLoader}
               alt="Picture of the author"
-              className={styles.circleImage}
+              layout="fill"
             />
           </div>
         </div>

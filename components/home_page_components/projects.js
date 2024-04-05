@@ -4,9 +4,7 @@ import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
-import photoGalleryPhoto from '../../assets/homents.JPG';
-import nearMissPhoto from '../../assets/nearmiss.jpeg';
-import pluckPhoto from '../../assets/pluck-logo.png';
+import imageLoader from '../../utils/imageLoader';
 
 export default function Projects() {
   return (
@@ -16,9 +14,13 @@ export default function Projects() {
         <div className={styles.cardContainer}>
           <Card className={styles.card}>
             <Image
-              src={photoGalleryPhoto}
+              src="homents.JPG"
+              loader={imageLoader}
               alt="Homents"
               className={styles.cardImage}
+              // layout="fill"
+              width={100}
+              height={300}
             />
             <Card.Body>
               <Card.Title>Homents</Card.Title>
@@ -29,9 +31,12 @@ export default function Projects() {
           </Card>
           <Card className={styles.card}>
             <Image
-              src={nearMissPhoto}
+              src="nearmiss.jpeg"
+              loader={imageLoader}
               alt="NearMiss"
               className={styles.cardImage}
+              width={100}
+              height={300}
             />
             <Card.Body>
               <Card.Title>NearMiss</Card.Title>
@@ -42,9 +47,12 @@ export default function Projects() {
           </Card>
           <Card className={styles.card}>
             <Image
-              src={pluckPhoto}
+              src="pluck-logo.png"
+              loader={imageLoader}
               alt="Pluck"
               className={styles.cardImage}
+              width={100}
+              height={300}
             />
             <Card.Body>
               <Card.Title>Pluck</Card.Title>

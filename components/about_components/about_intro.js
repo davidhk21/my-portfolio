@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../../styles/About.module.css';
-import photo from '../../assets/self-portrait.jpeg';
+import imageLoader from '../../utils/imageLoader';
 
 export default function AboutIntro() {
   return (
     <div className={styles.imageContainer}>
       <Image
-        src={photo}
+        src="greatwall.jpeg"
+        loader={imageLoader}
         alt="Picture of the author"
         className={styles.introImage}
         layout="fill"

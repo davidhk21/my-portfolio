@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Fade from 'react-reveal/Fade';
 import Image from 'next/image';
 import styles from '../../styles/Portfolio.module.css';
-import photoGalleryPhoto from '../../assets/homents.JPG';
-import nearMissPhoto from '../../assets/nearmiss.jpeg';
-import pluckPhoto from '../../assets/pluck-logo.png';
+import imageLoader from '../../utils/imageLoader';
 
 export default function Projects() {
   return (
@@ -16,9 +14,12 @@ export default function Projects() {
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
               <Image
-                src={photoGalleryPhoto}
+                src="homents.JPG"
+                loader={imageLoader}
                 alt="Homents"
                 className={styles.image}
+                width={500}
+                height={300}
               />
             </div>
             <div className={styles.link}>
@@ -39,9 +40,12 @@ export default function Projects() {
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
               <Image
-                src={nearMissPhoto}
+                src="nearmiss.jpeg"
+                loader={imageLoader}
                 alt="NearMiss"
                 className={styles.image}
+                width={500}
+                height={300}
               />
             </div>
             <div className={styles.link}>
@@ -62,9 +66,12 @@ export default function Projects() {
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
               <Image
-                src={pluckPhoto}
+                src="pluck-logo.png"
+                loader={imageLoader}
                 alt="Pluck"
                 className={styles.image}
+                width={500}
+                height={300}
               />
             </div>
             <div className={styles.link}>

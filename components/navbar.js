@@ -22,7 +22,7 @@ export default function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className={styles.navbar}>
-          <Nav className="ml-auto">
+          <Nav>
             <Nav.Link href="/">
               <p className={styles.navLink}>HOME</p>
             </Nav.Link>

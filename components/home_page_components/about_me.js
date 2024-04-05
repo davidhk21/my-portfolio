@@ -14,11 +14,11 @@ export default function AboutMe() {
         </div>
         <div className={styles.aboutMeDescContainer}>
           <FontAwesomeIcon icon={['fas', 'heart']} className={styles.iconBody} />
-          <p className={styles.aboutMeDescText}>I believe that a person&apos;s opinion of the world is also a confession of character. </p>
+          <p className={styles.aboutMeDescText}>I believe that a person&apos;s opinion of the world is also a confession of character.</p>
         </div>
         <div className={styles.aboutMeDescContainer}>
           <FontAwesomeIcon icon={['fas', 'brain']} className={styles.iconBody} />
-          <p className={styles.aboutMeDescText}>Though I&apos;m confident in my knowledge, skills, and abilities, I recognize there&apos;s always more to learn.</p>
+          <p className={styles.aboutMeDescText}>Though I&apos;m confident in my skills, and abilities, I recognize there&apos;s always more to learn.</p>
         </div>
       </div>
       <Link href="/about">

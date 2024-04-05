@@ -19,10 +19,9 @@ export default function Skills() {
               <li>Redux</li>
               <li>CSS</li>
               <li>HTML</li>
-              <li>Babel</li>
-              <li>Webpack</li>
+              <li>Next.js</li>
+              <li>Webpack/Babel</li>
               <li>jQuery</li>
-              <li>Victory.js</li>
               <li>React-Native</li>
             </ul>
           </div>

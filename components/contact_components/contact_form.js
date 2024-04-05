@@ -46,7 +46,7 @@ export default function ContactForm({ setModal }) {
     <div className={styles.contactFormContainer}>
       <div className={styles.questionsContainer}>
         <div className={styles.questionContainer}>
-          Looking to hire a Frontend/Full-Stack Software Engineer?
+          Looking to hire a Frontend Software Engineer?
         </div>
         <div className={styles.questionContainer}>
           Interested in becoming a Software Engineer from a non-technical background?

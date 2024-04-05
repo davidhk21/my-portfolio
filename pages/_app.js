@@ -18,7 +18,7 @@ const NavBar = dynamic(() => import('../components/navbar'), { ssr: false });
 
 library.add(fab, far, fas);
 
-const imageUrl = 'http://d82ay42odmokt.cloudfront.net';
+const imageUrl = 'http://d1btav10ks6qjy.cloudfront.net';
 
 function MyApp({ Component, pageProps }) {
   return (

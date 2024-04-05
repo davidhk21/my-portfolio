@@ -9,7 +9,7 @@
 }
 
 .introImage {
-  opacity: .4;
+  opacity: .6;
   animation: fadeIn ease 2s;
   pointer-events: none;
 }
@@ -36,9 +36,9 @@
   color: white;
   position: absolute;
   top: 120%;
+  text-decoration: none;
 }
 .resumeDownload:hover {
-  text-decoration: none;
   color: black;
   background: #e1a87a;
 }

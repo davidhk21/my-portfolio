@@ -1,5 +1,6 @@
 module.exports = {
   images: {
-    domains: ['d82ay42odmokt.cloudfront.net'],
+    loader: 'custom',
+    loaderFile: './utils/imageLoader.js',
   },
 };

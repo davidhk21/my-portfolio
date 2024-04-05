@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../../styles/Home.module.css';
-import photo from '../../assets/IMG_3066.JPG';
+import imageLoader from '../../utils/imageLoader';
 
 export default function Passion() {
   return (
@@ -10,9 +10,12 @@ export default function Passion() {
       <Fade distance="100px" delay={500} left>
         <div className={styles.selfPortraitContainer}>
           <Image
-            src={photo}
+            loader={imageLoader}
+            src="art_selfportrait.png"
             alt="Picture of the author"
             className={styles.selfPortrait}
+            width={300}
+            height={600}
           />
         </div>
       </Fade>

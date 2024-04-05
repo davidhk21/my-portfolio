@@ -78,52 +78,17 @@
 /********** Pictures **********/
 
 .picturesContainer {
-  height: 90vh;
-  max-height: 800px;
-  min-height: 600px;
-  display: grid;
-  grid-template-areas: 'picture1 picture2 picture3'
-                       'picture4 picture5 picture6';
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.pictureContainer {
-  overflow: hidden;
+  height: 55vw;
   position: relative;
 }
 
-.picture1Container {
-  grid-area: 'picture1'
-}
-
-.picture2Container {
-  grid-area: 'picture2';
-}
-
-.picture3Container {
-  grid-area: 'picture3';
-}
-
-.picture4Container {
-  grid-area: 'picture4';
-}
-
-.picture5Container {
-  grid-area: 'picture5';
-}
-
-.picture6Container {
-  grid-area: 'picture6';
+.sprite_image {
+  position: absolute;
 }
 
 @media screen and (max-width: 800px) {
   .picturesContainer {
-    grid-template-areas: 'picture1 picture2'
-                         'picture3 picture4'
-                         'picture5 picture6';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    height: 75vw;
   }
 }
 
@@ -156,21 +121,6 @@
   overflow: hidden;
   margin: 0 25px;
   position: relative;
-}
-
-.circleImage {
-  position: absolute;
-  top: -9999px;
-  bottom: -9999px;
-  left: -9999px;
-  right: -9999px;
-  margin: auto;
-  max-width: 150%;
-  max-height: 150%;
-}
-
-.travel {
-  right: -9970px;
 }
 
 .imageLeft {
