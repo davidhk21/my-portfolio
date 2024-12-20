@@ -8,7 +8,7 @@ export default function ContactForm({ setModal }) {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [formContent, setFormContent] = useState('');
-  const [fieldsError, setFieldsError] = useState(false);
+  const [fieldsError, setFieldsError] = useState(true);
 
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
@@ -55,27 +55,27 @@ export default function ContactForm({ setModal }) {
           Need help with anything or have any questions?
         </div>
       </div>
-      {fieldsError ? <div className={styles.formError}>Your form has encountered a problem. Please make sure all the fields are filled and that the email entered is valid.</div> : null}
+      {fieldsError ? <div className={styles.formError}>Sorry! The email form is temporarily disabled. If you would like to contact me, please email davidhk21@gmail.com</div> : null}
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
           <div className={styles.formMiniContainer}>
             <div className={styles.firstLastFields}>
               <label htmlFor="first-name" className={styles.nameInputsContainer}>
                 First Name *
-                <input type="text" value={firstName} onChange={handleFirstNameChange} className={styles.nameInputs} />
+                <input type="text" value={firstName} onChange={handleFirstNameChange} className={styles.nameInputs} disabled />
               </label>
               <label htmlFor="last-name" className={styles.nameInputsContainer}>
                 Last Name *
-                <input type="text" value={lastName} onChange={handleLastNameChange} className={styles.nameInputs} />
+                <input type="text" value={lastName} onChange={handleLastNameChange} className={styles.nameInputs} disabled />
               </label>
             </div>
             <label htmlFor="email">
               Email *
-              <input type="email" value={email} onChange={handleEmailChange} className={styles.emailInput} />
+              <input type="email" value={email} onChange={handleEmailChange} className={styles.emailInput} disabled />
             </label>
             <label htmlFor="form-content">
               Your Message *
-              <textarea type="text" value={formContent} onChange={handleFormContentChange} className={styles.contentInput} />
+              <textarea type="text" value={formContent} onChange={handleFormContentChange} className={styles.contentInput} disabled />
             </label>
             <input type="submit" value="SEND MESSAGE" className={styles.submitContact} />
           </div>
