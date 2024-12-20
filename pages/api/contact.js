@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     text: content,
     replyTo: email,
   };
-  transporter.sendMail(message, (err, data) => {
+  transporter.sendMail(message, (err) => {
     if (err) {
       return res.status(500).send(err);
     }
