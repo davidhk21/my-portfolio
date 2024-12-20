@@ -36,7 +36,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
   .brand {
     color: #1a1a1a
   }

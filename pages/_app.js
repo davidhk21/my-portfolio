@@ -11,6 +11,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import dynamic from 'next/dynamic';
 import Footer from '../components/footer';
+import { useScreenWidth, ScreenWidthContext } from '../hooks/useScreenWidthContext';
 
 config.autoAddCss = false;
 
@@ -21,15 +22,19 @@ library.add(fab, far, fas);
 const imageUrl = 'http://d1btav10ks6qjy.cloudfront.net';
 
 function MyApp({ Component, pageProps }) {
+  const screenWidth = useScreenWidth();
+
   return (
     <div>
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
         <title>David Kim</title>
       </Head>
-      <NavBar />
-      <Component {...pageProps} />
-      <Footer />
+      <ScreenWidthContext.Provider value={screenWidth}>
+        <NavBar />
+        <Component {...pageProps} />
+        <Footer />
+      </ScreenWidthContext.Provider>
     </div>
   );
 }
