@@ -1,20 +1,30 @@
-import axios from 'axios';
-
-const sendContactMail = (firstName, lastName, email, content) => {
-  const data = {
+const sendContactMail = async (firstName, lastName, email, content) => {
+  const emailData = {
     firstName,
     lastName,
     email,
     content,
   };
 
-  axios.post('/api/contact', data)
-    .then((res) => {
-      console.log('posted!', res);
-    })
-    .catch((err) => {
-      console.error(err);
+  console.log('this is mail data: ', emailData);
+
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(emailData),
     });
+    if (response.ok) {
+      console.log('email was successfully posted!');
+    } else {
+      console.log('email was not successfully posted');
+    }
+  } catch (e) {
+    console.log('there was an error in post call to email');
+    console.error(e);
+  }
 };
 
 export default sendContactMail;
