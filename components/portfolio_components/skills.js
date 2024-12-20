@@ -1,12 +1,12 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 import styles from '../../styles/Portfolio.module.css';
 
 export default function Skills() {
   return (
     <div className={styles.skillsContainer}>
-      <Fade delay={500} bottom cascade>
+      <Fade delay direction="up" triggerOnce>
         <div className={styles.skillsListContainer}>
           <div>
             <h4>TECHNOLOGIES</h4>

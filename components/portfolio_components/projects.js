@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import Image from 'next/image';
 import styles from '../../styles/Portfolio.module.css';
 import imageLoader from '../../utils/imageLoader';
@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className={styles.projectsContainer}>
       <h4 className={styles.projectsTitle}>PROJECTS</h4>
-      <Fade distance="100px" delay={500} left>
+      <Fade delay direction="left" triggerOnce>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
@@ -35,7 +35,7 @@ export default function Projects() {
           </div>
         </div>
       </Fade>
-      <Fade distance="100px" delay={500} right>
+      <Fade delay direction="right" triggerOnce>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
@@ -61,7 +61,7 @@ export default function Projects() {
           </div>
         </div>
       </Fade>
-      <Fade distance="100px" delay={500} left>
+      <Fade delay direction="left" triggerOnce>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>

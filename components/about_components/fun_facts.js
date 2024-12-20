@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import styles from '../../styles/About.module.css';
 import imageLoader from '../../utils/imageLoader';
 
 export default function FunFacts() {
   return (
     <div className={styles.funFactsContainer1}>
-      <Fade distance="100px" delay={500} left>
+      <Fade delay direction="left" triggerOnce>
         <div className={styles.selfPortraitContainer}>
           <Image
             src="art_selfportrait_with_shadow.png"
@@ -19,7 +19,7 @@ export default function FunFacts() {
           />
         </div>
       </Fade>
-      <Fade distance="100px" delay={500} right>
+      <Fade delay direction="right" triggerOnce>
         <div className={styles.funFactsInfoContainer}>
           <h1 className={styles.funFactsTitle}>A few fun facts about myself</h1>
           <p>

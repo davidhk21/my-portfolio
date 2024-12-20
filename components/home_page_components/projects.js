@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Image from 'next/image';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 import imageLoader from '../../utils/imageLoader';
@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <div className={styles.projectsContainer}>
       <h1 className={styles.projectsTitle}>Projects</h1>
-      <Fade distance="100px" delay={500} bottom cascade>
+      <Fade cascade direction="up" delay triggerOnce>
         <div className={styles.cardContainer}>
           <Card className={styles.card}>
             <Image

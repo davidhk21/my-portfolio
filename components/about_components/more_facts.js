@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import Fade from 'react-reveal/Fade';
+import { Slide } from 'react-awesome-reveal';
 import styles from '../../styles/About.module.css';
 import imageLoader from '../../utils/imageLoader';
 
 export default function MoreFacts() {
   return (
     <div className={styles.funFactsContainer}>
-      <Fade distance="200px" delay={500} left>
+      <Slide direction="left" triggerOnce>
         <div className={styles.funFactContainer}>
           <div className={styles.description}>
             <h4>Sports</h4>
@@ -22,8 +22,8 @@ export default function MoreFacts() {
             />
           </div>
         </div>
-      </Fade>
-      <Fade distance="200px" delay={500} right>
+      </Slide>
+      <Slide direction="right" triggerOnce>
         <div className={styles.funFactContainer}>
           <div className={`${styles.description} ${styles.descriptionRight}`}>
             <h4>Food</h4>
@@ -38,8 +38,8 @@ export default function MoreFacts() {
             />
           </div>
         </div>
-      </Fade>
-      <Fade distance="200px" delay={500} left>
+      </Slide>
+      <Slide direction="left" triggerOnce>
         <div className={styles.funFactContainer}>
           <div className={styles.description}>
             <h4>Travel</h4>
@@ -54,8 +54,8 @@ export default function MoreFacts() {
             />
           </div>
         </div>
-      </Fade>
-      <Fade distance="200px" delay={500} right>
+      </Slide>
+      <Slide direction="right" triggerOnce>
         <div className={styles.funFactContainer}>
           <div className={`${styles.description} ${styles.descriptionRight}`}>
             <h4>Reading/Writing</h4>
@@ -74,7 +74,7 @@ export default function MoreFacts() {
             />
           </div>
         </div>
-      </Fade>
+      </Slide>
     </div>
   );
 }
