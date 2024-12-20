@@ -2,13 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
+import imageLoader from '../../utils/imageLoader';
 
 export default function Contact() {
   return (
     <div className={styles.contactContainer}>
       <Image
-        // src={`${imageUrl}/computer-background.jpg`}
-        src=""
+        src="coding-background.jpeg"
+        loader={imageLoader}
         alt="Picture of someone working on a computer"
         className={styles.contactBackgroundImage}
         layout="fill"
