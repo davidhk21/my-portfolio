@@ -2,11 +2,14 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 
 import styles from '../../styles/Portfolio.module.css';
+import useScreenWidthContext from '../../hooks/useScreenWidthContext';
 
 export default function Skills() {
+  const screenWidth = useScreenWidthContext();
+
   return (
     <div className={styles.skillsContainer}>
-      <Fade delay direction="up" triggerOnce>
+      <Fade delay direction="up" triggerOnce fraction={screenWidth > 767 ? 0.75 : 0}>
         <div className={styles.skillsListContainer}>
           <div>
             <h4>TECHNOLOGIES</h4>

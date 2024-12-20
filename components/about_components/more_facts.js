@@ -7,7 +7,7 @@ import imageLoader from '../../utils/imageLoader';
 export default function MoreFacts() {
   return (
     <div className={styles.funFactsContainer}>
-      <Slide direction="left" triggerOnce>
+      <Slide direction="left" triggerOnce fraction={0.5}>
         <div className={styles.funFactContainer}>
           <div className={styles.description}>
             <h4>Sports</h4>
@@ -23,7 +23,7 @@ export default function MoreFacts() {
           </div>
         </div>
       </Slide>
-      <Slide direction="right" triggerOnce>
+      <Slide direction="right" triggerOnce fraction={0.5}>
         <div className={styles.funFactContainer}>
           <div className={`${styles.description} ${styles.descriptionRight}`}>
             <h4>Food</h4>
@@ -39,7 +39,7 @@ export default function MoreFacts() {
           </div>
         </div>
       </Slide>
-      <Slide direction="left" triggerOnce>
+      <Slide direction="left" triggerOnce fraction={0.5}>
         <div className={styles.funFactContainer}>
           <div className={styles.description}>
             <h4>Travel</h4>
@@ -55,7 +55,7 @@ export default function MoreFacts() {
           </div>
         </div>
       </Slide>
-      <Slide direction="right" triggerOnce>
+      <Slide direction="right" triggerOnce fraction={0.5}>
         <div className={styles.funFactContainer}>
           <div className={`${styles.description} ${styles.descriptionRight}`}>
             <h4>Learning</h4>

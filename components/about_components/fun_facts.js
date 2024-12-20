@@ -7,7 +7,7 @@ import imageLoader from '../../utils/imageLoader';
 export default function FunFacts() {
   return (
     <div className={styles.funFactsContainer1}>
-      <Fade delay direction="left" triggerOnce>
+      <Fade delay direction="left" triggerOnce fraction={0.75}>
         <div className={styles.selfPortraitContainer}>
           <Image
             src="art_selfportrait_with_shadow.png"
@@ -19,7 +19,7 @@ export default function FunFacts() {
           />
         </div>
       </Fade>
-      <Fade delay direction="right" triggerOnce>
+      <Fade delay direction="right" triggerOnce fraction={0.75}>
         <div className={styles.funFactsInfoContainer}>
           <h1 className={styles.funFactsTitle}>A few fun facts about myself</h1>
           <p>

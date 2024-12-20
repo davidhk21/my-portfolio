@@ -5,12 +5,15 @@ import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 import imageLoader from '../../utils/imageLoader';
+import useScreenWidthContext from '../../hooks/useScreenWidthContext';
 
 export default function Projects() {
+  const screenWidth = useScreenWidthContext();
+
   return (
     <div className={styles.projectsContainer}>
       <h1 className={styles.projectsTitle}>Projects</h1>
-      <Fade cascade direction="up" delay triggerOnce>
+      <Fade cascade direction="up" delay triggerOnce fraction={screenWidth > 767 ? 0.75 : 0}>
         <div className={styles.cardContainer}>
           <Card className={styles.card}>
             <Image
