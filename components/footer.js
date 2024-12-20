@@ -34,9 +34,6 @@ export default function Footer() {
         <a href="https://www.instagram.com/davidkimhoon/" target="_blank" rel="noopener noreferrer" className={`${styles.iconContainer} ${styles.shrink}`}>
           <FontAwesomeIcon icon={['fab', 'instagram']} className={styles.icon} />
         </a>
-        <a href="https://www.facebook.com/david.kim.503092/" target="_blank" rel="noopener noreferrer" className={`${styles.iconContainer} ${styles.shrink}`}>
-          <FontAwesomeIcon icon={['fab', 'facebook-f']} className={`${styles.icon} ${styles.smallerIcon}`} />
-        </a>
         <a href="https://www.linkedin.com/in/davidhk21/" target="_blank" rel="noopener noreferrer" className={`${styles.iconContainer} ${styles.shrink}`}>
           <FontAwesomeIcon icon={['fab', 'linkedin-in']} className={`${styles.icon} ${styles.smallerIcon}`} />
         </a>
