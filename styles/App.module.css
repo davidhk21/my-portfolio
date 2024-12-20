@@ -8,8 +8,9 @@
 
 .brand {
   color: white;
-  font-size: 25px;
+  font-size: 1.7rem;
   margin-left: 20px;
+  font-family: Forum;
 }
 .brand:hover {
   color: white;
@@ -24,8 +25,25 @@
   color:#e1a87a;
 }
 
-/* mobile styling for navbar */
+.navbarToggle {
+  margin-right: 15px;
+}
+
 .navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  width: 100%;
+}
+
+@media screen and (max-width: 560px) {
+  .brand {
+    color: #1a1a1a
+  }
+}
+
+/* mobile styling for navbar */
+.navbarCollapse {
   text-align: right;
 }
 

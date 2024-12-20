@@ -18,7 +18,6 @@ export default function Projects() {
               loader={imageLoader}
               alt="Homents"
               className={styles.cardImage}
-              // layout="fill"
               width={100}
               height={300}
             />

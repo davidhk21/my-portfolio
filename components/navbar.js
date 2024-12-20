@@ -20,9 +20,9 @@ export default function NavBar() {
         <Navbar.Brand href="/" className={styles.brand}>
           David Kim
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className={styles.navbar}>
-          <Nav>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className={styles.navbarToggle} />
+        <Navbar.Collapse id="responsive-navbar-nav" className={styles.navbarCollapse}>
+          <Nav className={styles.navbar}>
             <Nav.Link href="/">
               <p className={styles.navLink}>HOME</p>
             </Nav.Link>

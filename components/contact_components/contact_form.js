@@ -77,7 +77,7 @@ export default function ContactForm({ setModal }) {
               Your Message *
               <textarea type="text" value={formContent} onChange={handleFormContentChange} className={styles.contentInput} disabled />
             </label>
-            <input type="submit" value="SEND MESSAGE" className={styles.submitContact} />
+            <input type="submit" value="SEND MESSAGE" className={styles.submitContact} disabled />
           </div>
         </form>
       </div>

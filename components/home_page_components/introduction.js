@@ -17,7 +17,7 @@ export default function Introduction() {
       />
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>Hi! I&apos;m David Kim.</h1>
-        <h3 className={styles.imageText}>(pretty unique, right?)</h3>
+        <h1 className={styles.imageText}>(pretty unique, right?)</h1>
       </div>
     </div>
   );

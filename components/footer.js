@@ -6,7 +6,7 @@ import styles from '../styles/App.module.css';
 export default function Footer() {
   return (
     <div className={styles.footerContainer}>
-      <h1 className={styles.footerTitle}>Let&apos;s Connect!</h1>
+      <h1 className={styles.footerTitle}>Let&apos;s Connect</h1>
       <div className={styles.linksContainer}>
         <Link href="/" passHref>
           <a className={styles.links}>

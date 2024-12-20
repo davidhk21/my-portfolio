@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className={styles.projectsContainer}>
       <h4 className={styles.projectsTitle}>PROJECTS</h4>
-      <Fade delay direction="left" triggerOnce>
+      <Fade delay direction="left" triggerOnce fraction={0.5}>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
@@ -35,7 +35,7 @@ export default function Projects() {
           </div>
         </div>
       </Fade>
-      <Fade delay direction="right" triggerOnce>
+      <Fade delay direction="right" triggerOnce fraction={0.5}>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
@@ -61,7 +61,7 @@ export default function Projects() {
           </div>
         </div>
       </Fade>
-      <Fade delay direction="left" triggerOnce>
+      <Fade delay direction="left" triggerOnce fraction={0.5}>
         <div className={styles.projectContainer}>
           <div className={styles.leftContainer}>
             <div className={styles.projectsImageContainer}>
