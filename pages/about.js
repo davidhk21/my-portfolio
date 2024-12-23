@@ -10,7 +10,7 @@ export default function About() {
     <div>
       <AboutIntro />
       <FunFacts />
-      <Pictures />
+      {/* <Pictures /> */}
       <MoreFacts />
     </div>
   );

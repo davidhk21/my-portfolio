@@ -65,6 +65,7 @@
   height: 500px;
   position: relative;
   border: 1px solid #e1a87a;
+  border-radius: 15px;
   background: white;
 }
 

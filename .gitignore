@@ -36,3 +36,6 @@ yarn-error.log*
 
 # email config
 contact_config.js
+
+#vscode
+.vscode
