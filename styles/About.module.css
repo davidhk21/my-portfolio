@@ -3,6 +3,7 @@
 .imageContainer {
   background: black;
   height: 100vh;
+  position: relative;
 }
 
 .introImage {
@@ -160,16 +161,14 @@
 .moreFunFactsImageContainer {
   position: relative;
   background-color: #1a1a1a;
-  animation: fadeIn .7s ease;
-}
-  
-.moreFunFactsImage {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
-@keyframes fadeIn {
+.moreFunFactsImage {
+  animation: appear ease 2s;
+  pointer-events: none;
+}
+
+@keyframes appear {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }

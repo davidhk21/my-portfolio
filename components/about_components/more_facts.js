@@ -2,8 +2,57 @@ import React from 'react';
 import styles from '../../styles/About.module.css';
 import FunFactGallery from './FunFactGallery';
 
-const sportsImages = ['volleyball_intramurals.JPG', 'beach_volleyball.png', 'grass_volleyball_la.png', 'grass_volleyball_ny.png', 'half_marathon.JPG', 'golf_swing.png'];
-const travelImages = ['huangshan.jpg', 'barcelona.png', 'tokyo.JPG', 'tokyo_sunset.png', 'jeju_field.png', 'busan.JPG'];
+const sportsImages = [{
+  id: 0,
+  src: 'volleyball_intramurals.JPG',
+}, {
+  id: 1,
+  src: 'beach_volleyball.png',
+}, {
+  id: 2,
+  src: 'grass_volleyball_la.png',
+}, {
+  id: 3,
+  src: 'grass_volleyball_ny.png',
+}, {
+  id: 4,
+  src: 'half_marathon.JPG',
+}, {
+  id: 5,
+  src: 'golf_swing.png',
+}];
+const travelImages = [{
+  id: 0,
+  src: 'huangshan.jpg',
+}, {
+  id: 1,
+  src: 'barcelona.png',
+}, {
+  id: 2,
+  src: 'tokyo.JPG',
+}, {
+  id: 3,
+  src: 'tokyo_sunset.png',
+}, {
+  id: 4,
+  src: 'jeju_field.png',
+}, {
+  id: 5,
+  src: 'busan.JPG',
+}];
+const learningImages = [{
+  id: 0,
+  src: 'devocion.JPEG',
+}, {
+  id: 1,
+  src: 'coffee_check.png',
+}, {
+  id: 2,
+  src: 'lately_cafe.png',
+}, {
+  id: 3,
+  src: 'partners_coffee.png',
+}];
 
 export default function MoreFacts() {
   return (
@@ -22,7 +71,7 @@ export default function MoreFacts() {
       />
 
       <FunFactGallery
-        images={sportsImages}
+        images={learningImages}
         title="Learning"
         description="A daily goal of mine is becoming 1% better everyday, and a great way of doing so is through reading and writing.
             I don&apos;t consider myself a true reader, but I do enjoy reading when I have the time (..and the discipline).

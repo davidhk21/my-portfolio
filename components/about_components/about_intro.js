@@ -16,7 +16,7 @@ export default function AboutIntro() {
         priority
       />
       <div className={styles.imageTextContainer}>
-        <h1 className={styles.imageTitle}>My Passions & Personality</h1>
+        <h1 className={styles.imageTitle}>My Interests & Hobbies</h1>
       </div>
     </div>
   );

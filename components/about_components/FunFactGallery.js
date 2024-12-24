@@ -13,13 +13,19 @@ const FunFactGallery = ({ images, title, description, backgroundColor = 'white' 
   return (
     <div className={styles.funFactsSubContainer}>
       <div className={styles.moreFunFactsImageContainer}>
-        <Image
-          src={images[imageIdx]}
-          loader={imageLoader}
-          alt={title}
-          layout="fill"
-          objectFit="contain"
-        />
+        {images.map((image, idx) => (
+          <Image
+            key={`${image.src}-${image.idx}`}
+            src={images[imageIdx].src}
+            loader={imageLoader}
+            alt={title}
+            layout="fill"
+            objectFit="contain"
+            className={styles.moreFunFactsImage}
+            hidden={imageIdx !== idx}
+            priority
+          />
+        ))}
       </div>
       <div className={styles.descriptionContainer} style={{ backgroundColor }}>
         <h1 className={styles.descriptionTitle}>{title}</h1>
@@ -38,9 +44,10 @@ const FunFactGallery = ({ images, title, description, backgroundColor = 'white' 
           />
           <div className={styles.dotContainer}>
             {
-              images.map((src, idx) => (
+              images.map((image, idx) => (
                 // eslint-disable-next-line jsx-a11y/no-static-element-interactions
                 <div
+                  key={`${image.src}-${image.id}-dot`}
                   className={`${styles.dot} ${idx === imageIdx ? styles.solidDot : ''}`}
                   onClick={() => handleImageChange(idx)}
                 />
