@@ -1,29 +1,20 @@
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
-  auth: {
-    user: 'davidhk21@gmail.com',
-    pass: process.env.EMAIL_PASS,
-  },
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req, res) {
+export default async (req, res) => {
   const { firstName, lastName, email, content } = req.body;
-  const from = `${firstName} ${lastName} <${email}>`;
-  const message = {
-    from: email,
+  const { data, error } = await resend.emails.send({
+    from: `${firstName} ${lastName} <onboarding@resend.dev>`,
     to: 'davidhk21@gmail.com',
-    subject: `Portfolio Website Inquiry from ${from}`,
-    text: content,
+    subject: 'Email from Portfolio Website',
+    html: `<div>${content}</div>`,
     replyTo: email,
-  };
-  transporter.sendMail(message, (err) => {
-    if (err) {
-      return res.status(500).send(err);
-    }
-    return res.status(200).send('Email sent successfully');
   });
-}
+
+  if (error) {
+    return res.status(400).json({ error });
+  }
+
+  return res.status(200).json({ data });
+};

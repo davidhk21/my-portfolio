@@ -6,8 +6,6 @@ const sendContactMail = async (firstName, lastName, email, content) => {
     content,
   };
 
-  console.log('this is mail data: ', emailData);
-
   try {
     const response = await fetch('/api/contact', {
       method: 'POST',
@@ -17,9 +15,9 @@ const sendContactMail = async (firstName, lastName, email, content) => {
       body: JSON.stringify(emailData),
     });
     if (response.ok) {
-      console.log('email was successfully posted!');
+      console.log('email was successfully sent!');
     } else {
-      console.log('email was not successfully posted');
+      console.log('email was not successfully sent');
     }
   } catch (e) {
     console.log('there was an error in post call to email');
