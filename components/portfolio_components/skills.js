@@ -16,7 +16,7 @@ export default function Skills() {
           </div>
           <div>
             <p>FRONT-END</p>
-            <ul>
+            <ul className={styles.skillsList}>
               <li>JavaScript/TypeScript</li>
               <li>React.js</li>
               <li>Redux</li>
@@ -30,7 +30,7 @@ export default function Skills() {
           </div>
           <div>
             <p>BACK-END</p>
-            <ul>
+            <ul className={styles.skillsList}>
               <li>Node.js</li>
               <li>Express.js</li>
               <li>Java</li>
@@ -45,7 +45,7 @@ export default function Skills() {
           </div>
           <div>
             <p>DEV TOOLS & TECHNIQUES</p>
-            <ul>
+            <ul className={styles.skillsList}>
               <li>AWS (Lambda, DynamoDB, API Gateway, etc.)</li>
               <li>Terraform</li>
               <li>Jest</li>

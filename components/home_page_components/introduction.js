@@ -18,6 +18,11 @@ export default function Introduction() {
       <div className={styles.imageTextContainer}>
         <h1 className={styles.imageTitle}>Hi! I&apos;m David Kim.</h1>
         <h1 className={styles.imageText}>(pretty unique, right?)</h1>
+        <div className={styles.toolsContainer}>
+          <h3 className={styles.toolsTitle}>Built with</h3>
+          <h4 className={styles.tools}>React, Next.js, JavaScript, </h4>
+          <h4 className={styles.tools}>HTML, CSS, AWS</h4>
+        </div>
       </div>
     </div>
   );

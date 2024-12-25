@@ -24,6 +24,9 @@
   top: 40%;
   left: 6%;
   color: white;
+  /* border: 1px solid white; */
+  width: 90vw;
+  height: 50vh;
 }
 
 .imageTitle {
@@ -34,10 +37,44 @@
   font-size: 2vw;
 }
 
+.toolsContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.toolsTitle {
+  font-size: 2vw;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  letter-spacing: .1rem;
+  font-weight: 200;
+}
+
+.tools {
+  font-size: 1vw;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 560px) {
   .introImage {
     max-width: 300%;
     max-height: 300%;
+  }
+
+  .imageTitle {
+    font-size: 8vw;
+  }
+  .imageText {
+    font-size: 4vw;
+  }
+
+  .toolsTitle {
+    font-size: 4vw;
+  }
+  .tools {
+    font-size: 3vw;
   }
 }
 

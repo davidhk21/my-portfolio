@@ -52,6 +52,12 @@
 
 /********** Skills **********/
 
+ul.skillsList {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
 .skillsContainer {
   padding: 100px 0;
   background:#f0f0f0;
